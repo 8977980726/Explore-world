@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>United Kingdom Top Tours & Activities</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #c3c6c7;
+}
+
+h1 {
+    text-align: center;
+    margin: 20px 0;
+    font-size: 2em;
+}
+
+.filter-buttons {
+    text-align: center;
+    margin: 20px 0;
+}
+
+.filter-buttons button,
+.filter-buttons select {
+    padding: 10px 20px;
+    margin: 5px;
+    border: 1px solid #ccc;
+    background-color: #e8e6e3;
+    cursor: pointer;
+}
+
+.filter-buttons span {
+    margin-left: 10px;
+}
+.tour-listings {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+    padding: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.tour-card {
+    background-color: #e8e6e3;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    overflow: hidden;
+    transition: transform 0.2s ease-in-out;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.tour-card:hover {
+    transform: translateY(-5px);
+}
+
+.tour-card img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+.tour-info {
+    padding: 15px;
+}
+
+.tour-info h2 {
+    font-size: 1.25em;
+    margin: 10px 0;
+}
+
+.tour-info p {
+    margin: 5px 0;
+    color: #666;
+}
+
+.tour-info .price {
+    font-weight: bold;
+    color: #000;
+}
+
+.tour-info .rating {
+    font-size: 0.9em;
+    color: #4CAF50;
+}
+
+    </style>
+</head>
+<body>
+    <header>
+        <h1>United Kingdom Top Tours & Activities</h1>
+        <div class="filter-buttons">
+            <button>Select Dates</button>
+            <button>All filters</button>
+            <span>469 Results</span>
+            <select>
+                <option value="featured">Sort by: Featured</option>
+                <option value="price">Price</option>
+                <option value="rating">Rating</option>
+            </select>
+        </div>
+    </header>
+
+    <section class="tour-listings">
+        <div class="tour-card">
+            <img src="https://imgs.search.brave.com/nW-mTStGT0kKLDOilAKcblhwZBT9JC-GZIBThYvMNqU/rs:fit:500:0:0:0/g:ce/aHR0cHM6Ly91cGxv/YWQud2lraW1lZGlh/Lm9yZy93aWtpcGVk/aWEvY29tbW9ucy85/LzkwL1RoZV9HcmVh/dF9IYWxsLF9Ib2d3/YXJ0cy5qcGc" alt="Harry Potter Warner Bros">
+            <div class="tour-info">
+                <div class="rating">⭐ 4.7 (10,604)</div>
+                <h2>Harry Potter Warner Bros. Studio Tour with Transport from London</h2>
+                <p>Free Cancellation</p>
+                <p>Duration: 6 hours</p>
+                <p class="price">From ₹5,529 per person</p>
+            </div>
+        </div>
+        <div class="tour-card">
+            <img src="https://imgs.search.brave.com/thXw-cynfuULbBlUth7EvWMCaZMVxuvKQ1nhgTXbxF0/rs:fit:500:0:0:0/g:ce/aHR0cHM6Ly9tZWRp/YS50YWNkbi5jb20v/bWVkaWEvYXR0cmFj/dGlvbnMtc3BsaWNl/LXNwcC02NzR4NDQ2/LzA2LzcwLzI1L2I0/LmpwZw" alt="Stonehenge, Windsor Castle ">
+            <div class="tour-info">
+                <div class="rating">⭐ 4.6 (379)</div>
+                <h2>Stonehenge, Windsor Castle and Bath with Pub Lunch in Lacock</h2>
+                <p>Free Cancellation</p>
+                <p>Duration: 1 hour 30 minutes</p>
+                <p class="price">From ₹4,584 per person</p>
+            </div>
+        </div>
+        <div class="tour-card">
+            <img src="https://imgs.search.brave.com/xdlZfSASqWJKHSBTQMs7J_ARV0xW7bVkPJP_Rn0CMw0/rs:fit:500:0:0:0/g:ce/aHR0cHM6Ly9kMXh3/ODRpamE2Z2pneS5j/bG91ZGZyb250Lm5l/dC9wcm9kdWN0aW9u/LXVwZ3JhZGUtMjAy/NC9lNzBkZTYyMDg5/NDM3MTcwZWNjMzhh/NzQ4NzI5NWRiYi9j/b252ZXJzaW9ucy82/MTVjNWQ0ZGE1YjFi/LTM2MHAuanBn" alt="Loch Ness">
+            <div class="tour-info">
+                <div class="rating">⭐ 4.7 (3,950)</div>
+                <h2>Loch Ness, Scottish Highlands, Glencoe and Pitlochry Tour</h2>
+                <p>Free Cancellation</p>
+                <p class="price">From ₹7,033 per person</p>
+            </div>
+        </div>
+        <div class="tour-card">
+            <img src="https://imgs.search.brave.com/mCMtHfb0L4kF4tbPu-2MU2uixF4DZkkmOZDnOpu3DyE/rs:fit:500:0:0:0/g:ce/aHR0cHM6Ly93d3cu/YmxhY2tjYWJ0b3Vy/c29mbG9uZG9uLnVr/L3VwbG9hZHMvMS8w/LzUvMy8xMDUzNzY0/MDMvaW1hZ2UyLThf/b3JpZy5qcGVn" alt="The Premier Classic London">
+            <div class="tour-info">
+                <div class="rating">⭐ 4.8 (5,467)</div>
+                <h2>The Premier Classic London: Private 4-Hour Tour in a London Taxi</h2>
+                <p>Free Cancellation</p>
+                <p class="price">From ₹9,157 per person</p>
+            </div>
+        </div>
+        <div class="tour-card">
+            <img src="https://imgs.search.brave.com/LdZz781ZooyGWUWT6N57WH1gyqcb3CaVeHpJHms6Zm8/rs:fit:500:0:0:0/g:ce/aHR0cHM6Ly9tZWRp/YWltLmV4cGVkaWEu/Y29tL2xvY2FsZXhw/ZXJ0LzUwOTg2ODMv/MTk1ZGQ2ZmMtY2Iw/ZC00YjU0LWEzZTUt/MmQzZTQzYTg1ODQ2/LmpwZz9pbXBvbGlj/eT1yZXNpemVjcm9w/JnJ3PTEwMDUmcmg9/NTY1" alt="Edinburgh Castle ">
+            <div class="tour-info">
+                <div class="rating">⭐ 4.8 (5879)</div>
+                <h2>Edinburgh Castle Guided Walking Tour in English</h2>
+                <p>Free Cancellation</p>
+                <p class="price">From ₹15,392 per person</p>
+            </div>
+        </div>
+        <div class="tour-card">
+            <img src="https://imgs.search.brave.com/c4tXFoYIOwklFJBusvyELnWxB8VYVYB3AIeQjkwhuKE/rs:fit:500:0:0:0/g:ce/aHR0cHM6Ly9hcHBs/aWNhdGlvbnMtbWVk/aWEuZmV2ZXJ1cC5j/b20vaW1hZ2UvdXBs/b2FkL2ZfYXV0byx3/XzU1MCxoXzU1MC9m/ZXZlcjIvcGxhbi9w/aG90by83OThmMDg3/Ni1mY2UzLTExZTYt/OWY4Ny0wNjdkZmQ5/NzhjNGQucG5n" alt="Ghost, Ghouls and Gallows">
+            <div class="tour-info">
+                <div class="rating">⭐ 4.6 (5627)</div>
+                <h2>Ghost, Ghouls and Gallows Walking Tour with Boat Ride</h2>
+                <p>Free Cancellation</p>
+                <p class="price">From ₹11,342 per person</p>
+            </div>
+        </div>
+    </section>
+</body>
+</html>

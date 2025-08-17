@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Travel Website - Login & Signup</title>
+    <style>
+        /* Basic Reset */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Arial', sans-serif;
+            background-image: url("https://img.freepik.com/premium-photo/vintage-travelthemed-collage-art-background_514651-17.jpg");
+            background-repeat: no-repeat;
+            background-size: cover;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .container {
+            width: 380px;
+            border: 1.5px solid white;
+            padding: 40px 30px;
+            border-radius: 10px;
+            backdrop-filter: blur(0.2rem);
+            box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+            position: relative;
+        }
+
+        .container .form-title {
+            text-align: center;
+            font-size: 24px;
+            font-weight: bold;
+            margin-bottom: 20px;
+            color: white;
+        }
+
+        .container form {
+            display: none;
+        }
+
+        .container form.active {
+            display: block;
+        }
+
+        .container input {
+            width: 100%;
+            padding: 12px;
+            margin: 10px 0;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            font-size: 16px;
+        }
+
+        .container button {
+            width: 100%;
+            padding: 12px;
+            background-color: #0083B0;
+            border: none;
+            color: #fff;
+            font-size: 16px;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+
+        .container button:hover {
+            background-color: #00B4DB;
+        }
+
+        .toggle-btns {
+            display: flex;
+            justify-content: space-between;
+            margin-top: 20px;
+        }
+
+        .toggle-btns button {
+            width: 48%;
+            background-color: #f1f1f1;
+            color: #0083B0;
+        }
+
+        .toggle-btns button.active {
+            background-color: #0083B0;
+            color: #fff;
+        }
+
+        .toggle-btns button:hover {
+            background-color: #00B4DB;
+        }
+
+        .social-login {
+            text-align: center;
+            margin-top: 15px;
+            font-size: 16px;
+        }
+
+        .social-login a {
+            margin: 5px;
+            text-decoration: none;
+            color: black;
+        }
+
+        .social-login a:hover {
+            color: #00B4DB;
+        }
+
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <!-- Login Form -->
+    <div id="login-form" class="form-title">Login</div>
+    <form id="login" class="active">
+        <input type="email" placeholder="Email" required>
+        <input type="password" placeholder="Password" required>
+        <button type="submit">Login</button>
+        <div class="social-login">
+            <p>Or Login with</p>
+            <a href="#"><img src="https://imgs.search.brave.com/3v18wAfl8TfhyCKXMV4fq6inSt92G5YC3KRiq9n51wk/rs:fit:500:0:0:0/g:ce/aHR0cHM6Ly9zdGF0/aWMtMDAuaWNvbmR1/Y2suY29tL2Fzc2V0/cy4wMC9nb29nbGUt/aWNvbi0yMDQ4eDIw/NDgtY3puM2c4eDgu/cG5n" width="30px" alt="Google"></a> <a href="#"><img src="https://imgs.search.brave.com/6SKwdhOsY-K2XV-Wdui5fvvdN153woKTv_iFEAMVc2k/rs:fit:500:0:0:0/g:ce/aHR0cHM6Ly9zdGF0/aWMtMDAuaWNvbmR1/Y2suY29tL2Fzc2V0/cy4wMC9mYWNlYm9v/ay1pY29uLTUxMng1/MTItc2ViNTQyanUu/cG5n" width="30px" alt="Facebook"></a>
+        </div>
+    </form>
+
+    <!-- Signup Form -->
+    <div id="signup-form" class="form-title">Signup</div>
+    <form id="signup">
+        <input type="text" placeholder="Full Name" required>
+        <input type="email" placeholder="Email" required>
+        <input type="password" placeholder="Password" required>
+        <input type="password" placeholder="Confirm Password" required>
+        <button type="submit">Signup</button>
+        <div class="social-login">
+            <p>Or Signup with</p>
+            <a href="#"><img src="https://imgs.search.brave.com/3v18wAfl8TfhyCKXMV4fq6inSt92G5YC3KRiq9n51wk/rs:fit:500:0:0:0/g:ce/aHR0cHM6Ly9zdGF0/aWMtMDAuaWNvbmR1/Y2suY29tL2Fzc2V0/cy4wMC9nb29nbGUt/aWNvbi0yMDQ4eDIw/NDgtY3puM2c4eDgu/cG5n" width="30px" alt="Google"></a> <a href="#"><img src="https://imgs.search.brave.com/6SKwdhOsY-K2XV-Wdui5fvvdN153woKTv_iFEAMVc2k/rs:fit:500:0:0:0/g:ce/aHR0cHM6Ly9zdGF0/aWMtMDAuaWNvbmR1/Y2suY29tL2Fzc2V0/cy4wMC9mYWNlYm9v/ay1pY29uLTUxMng1/MTItc2ViNTQyanUu/cG5n" width="30px" alt="Facebook"></a>
+        </div>
+    </form>
+
+    <!-- Toggle Buttons -->
+    <div class="toggle-btns">
+        <button id="login-btn" class="active">Login</button>
+        <button id="signup-btn">Signup</button>
+    </div>
+</div>
+
+<!-- JavaScript to toggle between login and signup forms -->
+<script>
+    const loginBtn = document.getElementById('login-btn');
+    const signupBtn = document.getElementById('signup-btn');
+    const loginForm = document.getElementById('login');
+    const signupForm = document.getElementById('signup');
+    const loginTitle = document.getElementById('login-form');
+    const signupTitle = document.getElementById('signup-form');
+
+    loginBtn.addEventListener('click', () => {
+        loginForm.classList.add('active');
+        signupForm.classList.remove('active');
+        loginBtn.classList.add('active');
+        signupBtn.classList.remove('active');
+        loginTitle.style.display = "block";
+        signupTitle.style.display = "none";
+    });
+
+    signupBtn.addEventListener('click', () => {
+        signupForm.classList.add('active');
+        loginForm.classList.remove('active');
+        signupBtn.classList.add('active');
+        loginBtn.classList.remove('active');
+        signupTitle.style.display = "block";
+        loginTitle.style.display = "none";
+    });
+</script>
+
+</body>
+</html>

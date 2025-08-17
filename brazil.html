@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Brazil Top Tours & Activities</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #c3c6c7;
+}
+
+h1 {
+    text-align: center;
+    margin: 20px 0;
+    font-size: 2em;
+}
+
+.filter-buttons {
+    text-align: center;
+    margin: 20px 0;
+}
+
+.filter-buttons button,
+.filter-buttons select {
+    padding: 10px 20px;
+    margin: 5px;
+    border: 1px solid #ccc;
+    background-color: #e8e6e3;
+    cursor: pointer;
+}
+
+.filter-buttons span {
+    margin-left: 10px;
+}
+.tour-listings {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+    padding: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.tour-card {
+    background-color: #e8e6e3;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    overflow: hidden;
+    transition: transform 0.2s ease-in-out;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.tour-card:hover {
+    transform: translateY(-5px);
+}
+
+.tour-card img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+.tour-info {
+    padding: 15px;
+}
+
+.tour-info h2 {
+    font-size: 1.25em;
+    margin: 10px 0;
+}
+
+.tour-info p {
+    margin: 5px 0;
+    color: #666;
+}
+
+.tour-info .price {
+    font-weight: bold;
+    color: #000;
+}
+
+.tour-info .rating {
+    font-size: 0.9em;
+    color: #4CAF50;
+}
+
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Brazil Top Tours & Activities</h1>
+        <div class="filter-buttons">
+            <button>Select Dates</button>
+            <button>All filters</button>
+            <span>104 Results</span>
+            <select>
+                <option value="featured">Sort by: Featured</option>
+                <option value="price">Price</option>
+                <option value="rating">Rating</option>
+            </select>
+        </div>
+    </header>
+
+    <section class="tour-listings">
+        <div class="tour-card">
+            <img src="https://imgs.search.brave.com/Vn4qsoXlUt8MOsa7gvQY7-2iGV3gvJyWh7-hdtdAwEk/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9hc3Nl/dHMudHJhdmVsdHJp/YW5nbGUuY29tL2Js/b2cvd3AtY29udGVu/dC91cGxvYWRzLzIw/MTgvMDkvaG93LXRv/LXJlYWNoLWJyYXpp/bC5qcGc" alt="sugarloaf">
+            <div class="tour-info">
+                <div class="rating">⭐ 5.0 (16,454)</div>
+                <h2>Full Day: Christ Redeemer, Sugarloaf, City Tour & Barbecue Lunch</h2>
+                <p>Free Cancellation</p>
+                <p>Duration: 6 hours</p>
+                <p class="price">From ₹6,629 per person</p>
+            </div>
+        </div>
+        <div class="tour-card">
+            <img src="https://imgs.search.brave.com/I29SFHH1j2VWoLG1bYLsM9lQ6QxfWn2hOz0bOBJqmfA/rs:fit:500:0:0:0/g:ce/aHR0cHM6Ly9ub3dp/bnJpby5jb20vd3At/Y29udGVudC91cGxv/YWRzLzIwMjMvMDYv/RnVsbC1EYXktaW4t/UmlvLURlLUphbmVp/cm8tVG91ci5qcGVn" alt="Best of brazil">
+            <div class="tour-info">
+                <div class="rating">⭐ 4.8 (9379)</div>
+                <h2>Full Day in Rio: Christ by Train, Sugarloaf, Selarón & Barbecue</h2>
+                <p>Free Cancellation</p>
+                <p>Duration: 1 hour 30 minutes</p>
+                <p class="price">From ₹15,584 per person</p>
+            </div>
+        </div>
+        <div class="tour-card">
+            <img src="https://imgs.search.brave.com/hZD5_l2MIVHrmBZ0A-tRKOkX78-YKqpDtdnbL2m0swA/rs:fit:500:0:0:0/g:ce/aHR0cHM6Ly9tZWRp/YS1jZG4udHJpcGFk/dmlzb3IuY29tL21l/ZGlhL3Bob3RvLW8v/MTEvZmYvYTIvNjQv/c3Vuc2V0LXRvdXIt/ZGRyaW8uanBn" alt="Sunset Sailing">
+            <div class="tour-info">
+                <div class="rating">⭐ 4.7 (7390)</div>
+                <h2>Sunset Sailing Tour in Rio de Janeiro</h2>
+                <p>Free Cancellation</p>
+                <p class="price">From ₹7,033 per person</p>
+            </div>
+        </div>
+        <div class="tour-card">
+            <img src="https://imgs.search.brave.com/X5oYJ4Lqoy-oGWSuhOs2nLeIzOzgHbuBEBU8-mmWPqc/rs:fit:500:0:0:0/g:ce/aHR0cHM6Ly9pbWFn/ZXMuc3F1YXJlc3Bh/Y2UtY2RuLmNvbS9j/b250ZW50L3YxLzVh/ZWUyMzgyZjkzZmQ0/NjAzZTYyMTk5Ni8x/NTQ3ODEzMzU1Mzk3/LTBORkc3RTBYQVNI/REhVUVNQNlBGL1Jp/bytkZStKYW5laXJv/K0hlbGljb3B0ZXIu/anBn" alt="Rio De Janeiro Helicopter">
+            <div class="tour-info">
+                <div class="rating">⭐ 4.8 (5677)</div>
+                <h2>Rio De Janeiro Helicopter Flight Tour</h2>
+                <p>Free Cancellation</p>
+                <p class="price">From ₹5,157 per person</p>
+            </div>
+        </div>
+        <div class="tour-card">
+            <img src="https://imgs.search.brave.com/7lF6sg1BeqEOqFQerbNLMvkW8A6AFv03Azni-bQl9fU/rs:fit:500:0:0:0/g:ce/aHR0cHM6Ly93d3cu/cGVsYWdvLmNvL2lt/Zy9wcm9kdWN0cy9C/Ui1CcmF6aWwvaGFu/Zy1nbGlkaW5nLWhh/bmctZ2xpZGluZy1l/eHBlcmllbmNlLXJv/dG9yZmx5LzBhZGY5/ZDhlLTcyOGEtNGJh/MS05M2YwLTAwZGZj/ZDU4YmNmNl9oYW5n/LWdsaWRpbmctaGFu/Zy1nbGlkaW5nLWV4/cGVyaWVuY2Utcm90/b3JmbHktbWVkaXVt/LmpwZw" alt="Hang gliding Experience Rotorfly">
+            <div class="tour-info">
+                <div class="rating">⭐ 4.5 (5879)</div>
+                <h2>Hang gliding Experience Rotorfly </h2>
+                <p>Free Cancellation</p>
+                <p class="price">From ₹15,392 per person</p>
+            </div>
+        </div>
+        <div class="tour-card">
+            <img src="https://imgs.search.brave.com/muM_U_Go-SZUSwMQaw8Cpj63XzzoCVlEQLfX4M7LdOA/rs:fit:500:0:0:0/g:ce/aHR0cHM6Ly9ub3dp/bnJpby5jb20vd3At/Y29udGVudC91cGxv/YWRzLzIwMjMvMDYv/UmlvLVN1bnNldC1U/b3VyLmpwZWc" alt="Rio sunset">
+            <div class="tour-info">
+                <div class="rating">⭐ 5.0 (5627)</div>
+                <h2>Rio Sunset Tour Including Sugarloaf, Christ the Redeemer, Cathedral and Selaron</h2>
+                <p>Free Cancellation</p>
+                <p class="price">From ₹11,342 per person</p>
+            </div>
+        </div>
+    </section>
+</body>
+</html>

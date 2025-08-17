@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Bali Top Tours & Activities</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        /* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #c3c6c7;
+}
+
+h1 {
+    text-align: center;
+    margin: 20px 0;
+    font-size: 2em;
+}
+
+.filter-buttons {
+    text-align: center;
+    margin: 20px 0;
+}
+
+.filter-buttons button,
+.filter-buttons select {
+    padding: 10px 20px;
+    margin: 5px;
+    border: 1px solid #ccc;
+    background-color: #e8e6e3;
+    cursor: pointer;
+}
+
+.filter-buttons span {
+    margin-left: 10px;
+}
+
+/* Tour Listings Section */
+.tour-listings {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+    padding: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.tour-card {
+    background-color: #e8e6e3;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    overflow: hidden;
+    transition: transform 0.2s ease-in-out;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.tour-card:hover {
+    transform: translateY(-5px);
+}
+
+.tour-card img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+.tour-info {
+    padding: 15px;
+}
+
+.tour-info h2 {
+    font-size: 1.25em;
+    margin: 10px 0;
+}
+
+.tour-info p {
+    margin: 5px 0;
+    color: #666;
+}
+
+.tour-info .price {
+    font-weight: bold;
+    color: #000;
+}
+
+.tour-info .rating {
+    font-size: 0.9em;
+    color: #4CAF50;
+}
+
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Bali Top Tours & Activities</h1>
+        <div class="filter-buttons">
+            <button>Select Dates</button>
+            <button>All filters</button>
+            <span>137 Results</span>
+            <select>
+                <option value="featured">Sort by: Featured</option>
+                <option value="price">Price</option>
+                <option value="rating">Rating</option>
+            </select>
+        </div>
+    </header>
+
+    <section class="tour-listings">
+        <!-- First tour card -->
+        <div class="tour-card">
+            <img src="https://media.tacdn.com/media/attractions-splice-spp-674x446/13/9b/89/04.jpg" alt="️Nusa Penida by Private Boat - Snorkeling 4 spots, Swim with Mantas + Land Tour">
+            <div class="tour-info">
+                <div class="rating">⭐ 4.6 (10,111)</div>
+                <h2>️Nusa Penida by Private Boat - Snorkeling 4 spots, Swim with Mantas + Land Tour</h2>
+                <p>Duration: 4 hours</p>
+                <p class="price">From ₹8,529 per person</p>
+            </div>
+        </div>
+
+        <!-- Second tour card -->
+        <div class="tour-card">
+            <img src="https://media.tacdn.com/media/attractions-splice-spp-674x446/0a/a9/07/2b.jpg" alt="ATV Quad Bike Through Tunnel and Waterfall in Bali">
+            <div class="tour-info">
+                <div class="rating">⭐ 4.5 (379)</div>
+                <h2>ATV Quad Bike Through Tunnel and Waterfall in Bali</h2>
+                <p>No Cancellation</p>
+                <p class="price">From ₹2,999 per person</p>
+            </div>
+        </div>
+
+        <!-- Third tour card -->
+        <div class="tour-card">
+            <img src="https://media.tacdn.com/media/attractions-splice-spp-674x446/0a/7a/77/46.jpg" alt="Ubud: Monkey Forest, Jungle Swing, Rice Terrace, and Water Temple">
+            <div class="tour-info">
+                <div class="rating">⭐ 4.6 (4,932)</div>
+                <h2>Ubud: Monkey Forest, Jungle Swing, Rice Terrace, and Water Temple</h2>
+                <p>Free Cancellation</p>
+                <p class="price">From ₹5,699 per person</p>
+            </div>
+        </div>
+
+        <!-- Fourth tour card -->
+        <div class="tour-card">
+            <img src="https://media.tacdn.com/media/attractions-splice-spp-674x446/07/a3/81/e3.jpg" alt="Tanah Lot and North Bali Tour: Scenic Journey">
+            <div class="tour-info">
+                <div class="rating">⭐ 4.3 (5,467)</div>
+                <h2>Tanah Lot and North Bali Tour: Scenic Journey</h2>
+                <p>Non-Refundable</p>
+                <p class="price">From ₹4,499 per person</p>
+            </div>
+        </div>
+
+        <!-- Fifth tour card -->
+        <div class="tour-card">
+            <img src="https://media.tacdn.com/media/attractions-splice-spp-674x446/0f/88/6f/2b.jpg" alt="Uluwatu Sunset, Kecak Dance, and Dinner Jimbaran Beach">
+            <div class="tour-info">
+                <div class="rating">⭐ 4.8 (659)</div>
+                <h2>Uluwatu Sunset, Kecak Dance, and Dinner Jimbaran Beach</h2>
+                <p>Refundable</p>
+                <p class="price">From ₹20,999 per person</p>
+            </div>
+            </div>
+
+            <!-- Sixth tour card -->
+        <div class="tour-card">
+            <img src="https://media.tacdn.com/media/attractions-splice-spp-674x446/0b/25/22/a6.jpg" alt="Mount Batur Sunrise Hiking with Natural Hot Spring Option">
+            <div class="tour-info">
+                <div class="rating">⭐ 4.6 (5,856)</div>
+                <h2>Mount Batur Sunrise Hiking with Natural Hot Spring Option</h2>
+                <p>Free Cancellation</p>
+                <p class="price">From ₹27,499 per person</p>
+            </div>
+            
+        </div>
+    </section>
+</body>
+</html>

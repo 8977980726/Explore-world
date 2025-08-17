@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Paris City Top Tours & Activities</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        /* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #c3c6c7;
+}
+
+h1 {
+    text-align: center;
+    margin: 20px 0;
+    font-size: 2em;
+}
+
+.filter-buttons {
+    text-align: center;
+    margin: 20px 0;
+}
+
+.filter-buttons button,
+.filter-buttons select {
+    padding: 10px 20px;
+    margin: 5px;
+    border: 1px solid #ccc;
+    background-color: #e8e6e3;
+    cursor: pointer;
+}
+
+.filter-buttons span {
+    margin-left: 10px;
+}
+
+/* Tour Listings Section */
+.tour-listings {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+    padding: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.tour-card {
+    background-color: #e8e6e3;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    overflow: hidden;
+    transition: transform 0.2s ease-in-out;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.tour-card:hover {
+    transform: translateY(-5px);
+}
+
+.tour-card img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+.tour-info {
+    padding: 15px;
+}
+
+.tour-info h2 {
+    font-size: 1.25em;
+    margin: 10px 0;
+}
+
+.tour-info p {
+    margin: 5px 0;
+    color: #666;
+}
+
+.tour-info .price {
+    font-weight: bold;
+    color: #000;
+}
+
+.tour-info .rating {
+    font-size: 0.9em;
+    color: #4CAF50;
+}
+
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Paris City Top Tours & Activities</h1>
+        <div class="filter-buttons">
+            <button>Select Dates</button>
+            <button>All filters</button>
+            <span>153 Results</span>
+            <select>
+                <option value="featured">Sort by: Featured</option>
+                <option value="price">Price</option>
+                <option value="rating">Rating</option>
+            </select>
+        </div>
+    </header>
+
+    <section class="tour-listings">
+        <!-- First tour card -->
+        <div class="tour-card">
+            <img src="https://media.tacdn.com/media/attractions-splice-spp-674x446/12/8f/e2/a4.jpg" alt="Eiffel Tower Tour with Top Floor access">
+            <div class="tour-info">
+                <div class="rating">⭐ 4.9 (15,734)</div>
+                <h2>Eiffel Tower Tour with Top Floor access</h2>
+                <p>Free Cancellation</p>
+                <p>Duration: 2 hours</p>
+                <p class="price">From ₹8,599 per person</p>
+            </div>
+        </div>
+
+        <!-- Second tour card -->
+        <div class="tour-card">
+            <img src="https://media.tacdn.com/media/attractions-splice-spp-674x446/07/7e/6d/4b.jpg" alt="Bateaux Parisiens Seine River Gourmet Dinner & Sightseeing Cruise">
+            <div class="tour-info">
+                <div class="rating">⭐ 4.7 (379)</div>
+                <h2>Bateaux Parisiens Seine River Gourmet Dinner & Sightseeing Cruise</h2>
+                <p>Free Cancellation</p>
+                <p>Duration: 2 hour 20 minutes</p>
+                <p class="price">From ₹2,999 per person</p>
+            </div>
+        </div>
+
+        <!-- Third tour card -->
+        <div class="tour-card">
+            <img src="https://media.tacdn.com/media/attractions-splice-spp-674x446/13/ce/b7/65.jpg" alt="Louvre Museum Masterpieces Guided Tour with Reserved Access">
+            <div class="tour-info">
+                <div class="rating">⭐ 4.8 (3,758)</div>
+                <h2>Louvre Museum Masterpieces Guided Tour with Reserved Access</h2>
+                <p>Free Cancellation</p>
+                <p class="price">From ₹5,099 per person</p>
+            </div>
+        </div>
+
+        <!-- Fourth tour card -->
+        <div class="tour-card">
+            <img src="https://media.tacdn.com/media/attractions-splice-spp-674x446/11/ac/fe/ea.jpg" alt="Versailles Palace and Gardens Skip-the-Line Tour from Paris">
+            <div class="tour-info">
+                <div class="rating">⭐ 4.4 (5,797)</div>
+                <h2>Versailles Palace and Gardens Skip-the-Line Tour from Paris</h2>
+                <p> No Cancellation</p>
+                <p class="price">From ₹4,199 per person</p>
+            </div>
+        </div>
+
+        <!-- Fifth tour card -->
+        <div class="tour-card">
+            <img src="https://media.tacdn.com/media/attractions-splice-spp-674x446/06/ef/71/1f.jpg" alt="Loire Valley Castles Day Trip from Paris with Wine Tasting">
+            <div class="tour-info">
+                <div class="rating">⭐ 4.7 (643)</div>
+                <h2>Loire Valley Castles Day Trip from Paris with Wine Tasting</h2>
+                <p> Free Cancellation</p>
+                <p class="price">From ₹23,599 per person</p>
+            </div>
+        </div>
+
+        <!-- Sixth tour card -->
+        <div class="tour-card">
+            <img src="https://media.tacdn.com/media/attractions-splice-spp-674x446/0c/12/6a/5e.jpg" alt="Disneyland® Paris Entrance Ticket">
+            <div class="tour-info">
+                <div class="rating">⭐ 4.9 (512)</div>
+                <h2>Disneyland® Paris Entrance Ticket</h2>
+                <p>Non-Refundable</p>
+                <p class="price">From ₹26,899 per person</p>
+            </div>
+            
+        </div>
+    </section>
+</body>
+</html>

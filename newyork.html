@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>New York City Top Tours & Activities</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        /* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #c3c6c7;
+}
+
+h1 {
+    text-align: center;
+    margin: 20px 0;
+    font-size: 2em;
+}
+
+.filter-buttons {
+    text-align: center;
+    margin: 20px 0;
+}
+
+.filter-buttons button,
+.filter-buttons select {
+    padding: 10px 20px;
+    margin: 5px;
+    border: 1px solid #ccc;
+    background-color: #e8e6e3;
+    cursor: pointer;
+}
+
+.filter-buttons span {
+    margin-left: 10px;
+}
+
+/* Tour Listings Section */
+.tour-listings {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+    padding: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.tour-card {
+    background-color: #e8e6e3;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    overflow: hidden;
+    transition: transform 0.2s ease-in-out;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.tour-card:hover {
+    transform: translateY(-5px);
+}
+
+.tour-card img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+.tour-info {
+    padding: 15px;
+}
+
+.tour-info h2 {
+    font-size: 1.25em;
+    margin: 10px 0;
+}
+
+.tour-info p {
+    margin: 5px 0;
+    color: #666;
+}
+
+.tour-info .price {
+    font-weight: bold;
+    color: #000;
+}
+
+.tour-info .rating {
+    font-size: 0.9em;
+    color: #4CAF50;
+}
+
+    </style>
+</head>
+<body>
+    <header>
+        <h1>New York City Top Tours & Activities</h1>
+        <div class="filter-buttons">
+            <button>Select Dates</button>
+            <button>All filters</button>
+            <span>107 Results</span>
+            <select>
+                <option value="featured">Sort by: Featured</option>
+                <option value="price">Price</option>
+                <option value="rating">Rating</option>
+            </select>
+        </div>
+    </header>
+
+    <section class="tour-listings">
+        <!-- First tour card -->
+        <div class="tour-card">
+            <img src="https://th.bing.com/th/id/OIP.nlDsLcGl1I_MjtFBhV1C3AHaE8?w=284&h=190&c=7&r=0&o=5&dpr=1.3&pid=1.7" alt="NYC Skyline">
+            <div class="tour-info">
+                <div class="rating">⭐ 4.7 (10,689)</div>
+                <h2>New York in One Day Guided Sightseeing Tour</h2>
+                <p>Free Cancellation</p>
+                <p>Duration: 5 hours</p>
+                <p class="price">From ₹9,699 per person</p>
+            </div>
+        </div>
+
+        <!-- Second tour card -->
+        <div class="tour-card">
+            <img src="https://imgs.search.brave.com/NkssmewfutMkFhNbhnPlnpYgid5iV4teThjG0BihoLI/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9hcHBs/aWNhdGlvbnMtbWVk/aWEuZmV2ZXJ1cC5j/b20vaW1hZ2UvdXBs/b2FkL2ZfYXV0byx3/XzU1MCxoXzU1MC9m/ZXZlcjIvcGxhbi9w/aG90by84NjdmNzI2/YS0yYThjLTExZTct/OGQ3ZC0wNjdkZmQ5/NzhjNGQucG5n" alt="NYC Cruise">
+            <div class="tour-info">
+                <div class="rating">⭐ 4.6 (386)</div>
+                <h2>New York City 90-Minute Cruise: Lady Liberty, Bridges and Skyline</h2>
+                <p>Free Cancellation</p>
+                <p>Duration: 1 hour 30 minutes</p>
+                <p class="price">From ₹3,599 per person</p>
+            </div>
+        </div>
+
+        <!-- Third tour card -->
+        <div class="tour-card">
+            <img src="https://imgs.search.brave.com/E_d5J6wtF7ENsMcqrTar5zmXs9Cwraq3G8LRdIQsojc/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9pbWFn/ZXMuY3RmYXNzZXRz/Lm5ldC8xYWVtcXU2/YTZ0NjUvM0pMR0NE/WGpHRUtRajk5Y0lp/dXZ1ZC8yZWIzMjhj/MDg2Y2JiMGM2Y2Y4/MmZmMjEyMDQ5NDE0/ZC9zdW1taXRfZXh0/ZXJpb3JfYTkxZWZj/ZGQtZTg1Yi00OTlj/LTg2MDY5MjlkNmFm/YjkyYTRfMjgwMWMy/ODctOTU5MC00MDAx/LWI5ZDA1MDkwY2Zh/Nzk2ZDQ_dz0xMjAw/Jmg9ODAwJnE9NzU" alt="SUMMIT One Vanderbilt">
+            <div class="tour-info">
+                <div class="rating">⭐ 4.8 (3,950)</div>
+                <h2>SUMMIT One Vanderbilt Experience Ticket</h2>
+                <p>Free Cancellation</p>
+                <p class="price">From ₹4,999 per person</p>
+            </div>
+        </div>
+
+        <!-- Fourth tour card -->
+        <div class="tour-card">
+            <img src="https://imgs.search.brave.com/tTdEZjMGLy5bjoLNiWYZOaXHeqLPGv9j4elyflHHJuA/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9tZWRp/YS5nZXR0eWltYWdl/cy5jb20vaWQvNDk2/Nzk5ODY5L3Bob3Rv/L3RoZS1lbXBpcmUt/c3RhdGUtYnVpbGRp/bmcuanBnP3M9NjEy/eDYxMiZ3PTAmaz0y/MCZjPVEyYWhQNjFr/LXhPU2tMRDBmSW1G/SUZrYU1MT0ZHVTNU/SllESlhlNUoxeFk9" alt="Empire State Building">
+            <div class="tour-info">
+                <div class="rating">⭐ 4.5 (5,498)</div>
+                <h2>NYC Empire State Building Admission Ticket</h2>
+                <p>Free Cancellation</p>
+                <p class="price">From ₹4,399 per person</p>
+            </div>
+        </div>
+
+        <!-- Fifth tour card -->
+        <div class="tour-card">
+            <img src="https://imgs.search.brave.com/GXuOU6BEiMGXRxmiCLtdjy3d-6036tE63kGtt2EEDdU/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9yZXMu/a2xvb2suY29tL2lt/YWdlcy9mbF9sb3Nz/eS5wcm9ncmVzc2l2/ZSxxXzY1L2NfZmls/bCx3XzEyOTUsaF83/MjAvd184MCx4XzE1/LHlfMTUsZ19zb3V0/aF93ZXN0LGxfS2xv/b2tfd2F0ZXJfYnJf/dHJhbnNfeWhjbWgz/L2FjdGl2aXRpZXMv/ZXFidHN6dXVrcmJl/dW9neWdpaHIvVGhl/TmF0aW9uYWw5MTFN/ZW1vcmlhbE11c2V1/bS5qcGc" alt="9/11 Memorial Museum Admission Ticket">
+            <div class="tour-info">
+                <div class="rating">⭐ 4.5 (562)</div>
+                <h2>9/11 Memorial Museum Admission Ticket</h2>
+                <p>Free Cancellation</p>
+                <p class="price">From ₹28,599 per person</p>
+            </div>
+        </div>
+    </section>
+</body>
+</html>

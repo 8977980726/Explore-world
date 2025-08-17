@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Turkey Top Tours & Activities</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #c3c6c7;
+}
+
+h1 {
+    text-align: center;
+    margin: 20px 0;
+    font-size: 2em;
+}
+
+.filter-buttons {
+    text-align: center;
+    margin: 20px 0;
+}
+
+.filter-buttons button,
+.filter-buttons select {
+    padding: 10px 20px;
+    margin: 5px;
+    border: 1px solid #ccc;
+    background-color: #e8e6e3;
+    cursor: pointer;
+}
+
+.filter-buttons span {
+    margin-left: 10px;
+}
+.tour-listings {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+    padding: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.tour-card {
+    background-color: #e8e6e3;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    overflow: hidden;
+    transition: transform 0.2s ease-in-out;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.tour-card:hover {
+    transform: translateY(-5px);
+}
+
+.tour-card img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+.tour-info {
+    padding: 15px;
+}
+
+.tour-info h2 {
+    font-size: 1.25em;
+    margin: 10px 0;
+}
+
+.tour-info p {
+    margin: 5px 0;
+    color: #666;
+}
+
+.tour-info .price {
+    font-weight: bold;
+    color: #000;
+}
+
+.tour-info .rating {
+    font-size: 0.9em;
+    color: #4CAF50;
+}
+
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Turkey Top Tours & Activities</h1>
+        <div class="filter-buttons">
+            <button>Select Dates</button>
+            <button>All filters</button>
+            <span>93 Results</span>
+            <select>
+                <option value="featured">Sort by: Featured</option>
+                <option value="price">Price</option>
+                <option value="rating">Rating</option>
+            </select>
+        </div>
+    </header>
+
+    <section class="tour-listings">
+        <div class="tour-card">
+            <img src="https://imgs.search.brave.com/bDEtK9x3rWkWWGz1rxQ9fKaZ60LqfKLubg_U6A8UW_Y/rs:fit:500:0:0:0/g:ce/aHR0cHM6Ly93d3cu/d2VzZWVrdHJhdmVs/LmNvbS93cC1jb250/ZW50L3VwbG9hZHMv/MjAyMi8wOC9jYXBw/YWRvY2lhLWhvdC1h/aXItYmFsbG9vbnMt/NS5qcGc" alt="Cappadocia Hot Air Balloon Ride">
+            <div class="tour-info">
+                <div class="rating">⭐ 5.0 (10,604)</div>
+                <h2>Cappadocia Hot Air Balloon Ride / Turquaz Balloons</h2>
+                <p>Free Cancellation</p>
+                <p>Duration: 6 hours</p>
+                <p class="price">From ₹9,329 per person</p>
+            </div>
+        </div>
+        <div class="tour-card">
+            <img src="https://imgs.search.brave.com/8vGQ2T9JTMRU-QJ7n3SqI9mKMM5KLWODDD_W0_XFGSI/rs:fit:500:0:0:0/g:ce/aHR0cHM6Ly93d3cu/b3VyZXNjYXBlY2xh/dXNlLmNvbS93cC1j/b250ZW50L3VwbG9h/ZHMvMjAxOC8wNy9J/c3RhbmJ1bEhhZ2lh/U29maWEuanBn" alt="Best of Istanbul">
+            <div class="tour-info">
+                <div class="rating">⭐ 5.0 (8379)</div>
+                <h2>Best of Istanbul: 1, 2 or 3-Day Private Guided Istanbul Tour</h2>
+                <p>Free Cancellation</p>
+                <p>Duration: 1 hour 30 minutes</p>
+                <p class="price">From ₹15,584 per person</p>
+            </div>
+        </div>
+        <div class="tour-card">
+            <img src="https://imgs.search.brave.com/vaTqxcp-irxJS8A0bpQ-twLiWvLFpANJ1-I8HGRvN0E/rs:fit:500:0:0:0/g:ce/aHR0cHM6Ly9jZG4t/aW1naXguaGVhZG91/dC5jb20vbWVkaWEv/aW1hZ2VzLzJlYmJl/NThhZmI0YzAxOGE1/ZDUwNWQ0NjBhM2Rk/MmU2LTExOTc0LWlz/dGFuYnVsLWJvc3Bo/b3J1cy1zdW5zZXQt/eWFjaHQtY3J1aXNl/LS0xMi5qcGc_YXV0/bz1mb3JtYXQmdz04/MjgmaD02MTkuMTk5/OTk5OTk5OTk5OSZx/PTkwJmFyPTM6NCZj/cm9wPWZhY2VzLGNl/bnRlciZmaXQ9Y3Jv/cA" alt="Bosphorus Night Cruise">
+            <div class="tour-info">
+                <div class="rating">⭐ 4.8 (390)</div>
+                <h2>Bosphorus Night Cruise with Dinner, Show and Private Table</h2>
+                <p>Free Cancellation</p>
+                <p class="price">From ₹3,033 per person</p>
+            </div>
+        </div>
+        <div class="tour-card">
+            <img src="https://imgs.search.brave.com/aOdngCWrENS5VbXMxT1Iy4LGC35xDgz-9yNJnOAiZ3k/rs:fit:500:0:0:0/g:ce/aHR0cHM6Ly9leGN1/cnNpb25nby5jb20v/d3AtY29udGVudC91/cGxvYWRzLzIwMjIv/MDEvNTY1LmpwZw" alt="Suluada">
+            <div class="tour-info">
+                <div class="rating">⭐ 4.8 (567)</div>
+                <h2>Suluada Boat Tour From Antalya (Maldives of Turkey) with Lunch & Hotel Transfer</h2>
+                <p>Free Cancellation</p>
+                <p class="price">From ₹5,157 per person</p>
+            </div>
+        </div>
+        <div class="tour-card">
+            <img src="https://imgs.search.brave.com/UJkBobu7w3MdfsYoIFtYi_7TBz4XXsjDAukQsNTdcQs/rs:fit:500:0:0:0/g:ce/aHR0cHM6Ly9tZWRp/YS5pc3RvY2twaG90/by5jb20vaWQvNDg1/MTkzMTQ3L3Bob3Rv/L2JsdWUtbW9zcXVl/LmpwZz9zPTYxMng2/MTImdz0wJms9MjAm/Yz1mODJOOW82cnNL/WUI4c09tSDA0TEI1/Zjd5VTBmWEo4eUQy/T3Frbms4cW9jPQ" alt="Bluemosqu">
+            <div class="tour-info">
+                <div class="rating">⭐ 4.8 (5879)</div>
+                <h2>Istanbul Must See:Hagia Sophia Bluemosqu Topkapı Basilica Cistern Bosphorus Tour</h2>
+                <p>Free Cancellation</p>
+                <p class="price">From ₹15,392 per person</p>
+            </div>
+        </div>
+        <div class="tour-card">
+            <img src="https://imgs.search.brave.com/_RVapvNAqU4n4sDKzCYpJf4_jJenN1_sr0vPqB3F-ZM/rs:fit:500:0:0:0/g:ce/aHR0cHM6Ly93d3cu/aGF2ZS1jbG90aGVz/LXdpbGwtdHJhdmVs/LmNvbS93cC1jb250/ZW50L3VwbG9hZHMv/MjAxOC8xMS81QjdB/NzEwNS03ODB4NTIw/LmpwZw" alt="Green (South) Tour">
+            <div class="tour-info">
+                <div class="rating">⭐ 5.0 (5627)</div>
+                <h2>Green (South) Tour Cappadocia (small group) with lunch and ticket</h2>
+                <p>Free Cancellation</p>
+                <p class="price">From ₹11,342 per person</p>
+            </div>
+        </div>
+    </section>
+</body>
+</html>

@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Dubai Top Tours & Activities</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #c3c6c7;
+}
+
+h1 {
+    text-align: center;
+    margin: 20px 0;
+    font-size: 2em;
+}
+
+.filter-buttons {
+    text-align: center;
+    margin: 20px 0;
+}
+
+.filter-buttons button,
+.filter-buttons select {
+    padding: 10px 20px;
+    margin: 5px;
+    border: 1px solid #ccc;
+    background-color: #e8e6e3;
+    cursor: pointer;
+}
+
+.filter-buttons span {
+    margin-left: 10px;
+}
+.tour-listings {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+    padding: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.tour-card {
+    background-color: #e8e6e3;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    overflow: hidden;
+    transition: transform 0.2s ease-in-out;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.tour-card:hover {
+    transform: translateY(-5px);
+}
+
+.tour-card img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+.tour-info {
+    padding: 15px;
+}
+
+.tour-info h2 {
+    font-size: 1.25em;
+    margin: 10px 0;
+}
+
+.tour-info p {
+    margin: 5px 0;
+    color: #666;
+}
+
+.tour-info .price {
+    font-weight: bold;
+    color: #000;
+}
+
+.tour-info .rating {
+    font-size: 0.9em;
+    color: #4CAF50;
+}
+
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Dubai Top Tours & Activities</h1>
+        <div class="filter-buttons">
+            <button>Select Dates</button>
+            <button>All filters</button>
+            <span>233 Results</span>
+            <select>
+                <option value="featured">Sort by: Featured</option>
+                <option value="price">Price</option>
+                <option value="rating">Rating</option>
+            </select>
+        </div>
+    </header>
+
+    <section class="tour-listings">
+        <div class="tour-card">
+            <img src="https://imgs.search.brave.com/cI7nNsPu0yn9XMDiP7hKb0LuTdf9NM_87UNy_51QHVI/rs:fit:500:0:0:0/g:ce/aHR0cHM6Ly93d3cu/cXVhZGJpa2luZ2R4/Yi5jb20vd3AtY29u/dGVudC91cGxvYWRz/LzIwMjEvMDkvcXVh/ZC0yLTIuanBn" alt="half day desert">
+            <div class="tour-info">
+                <div class="rating">⭐ 5.0 (2,604)</div>
+                <h2>Dubai: Half-Day Desert Safari, Camels, Quad Bike & Refreshments</h2>
+                <p>Free Cancellation</p>
+                <p>Duration: 6 hours</p>
+                <p class="price">From ₹2,239 per person</p>
+            </div>
+        </div>
+        <div class="tour-card">
+        <img src="https://imgs.search.brave.com/19O3jjiC8fxCl85RNN3jd7_ZFX4Wp-L9-vCxlMdM96s/rs:fit:500:0:0:0/g:ce/aHR0cHM6Ly93d3cu/ZHViYWl5YWNodHMu/Y29tL3dwLWNvbnRl/bnQvdXBsb2Fkcy8y/MDIzLzA5L21haW4t/Mi0xLmpwZw" alt="harbour">
+            <div class="tour-info">
+                <div class="rating">⭐ 4.7 (5479)</div>
+                <h2>Dubai Harbour Super Yacht Experience with Live station & Drinks</h2>
+                <p>Free Cancellation</p>
+                <p>Duration: 1 hour 30 minutes</p>
+                <p class="price">From ₹10,584 per person</p>
+            </div>
+        </div>
+        <div class="tour-card">
+            <img src="https://imgs.search.brave.com/ufxnZpgwHqmvH2OwIzNhT5xwCd9EJg5rjrOhZ68FU-w/rs:fit:500:0:0:0/g:ce/aHR0cHM6Ly9jZG4u/Z2V0eW91cmd1aWRl/LmNvbS9pbWcvdG91/ci81ZjE1OTQxNWQ5/OWJhLmpwZWcvMTMy/LmpwZw" alt="Khayma camp">
+            <div class="tour-info">
+                <div class="rating">⭐ 4.8 (8,950)</div>
+                <h2>Dubai Overnight Desert Safari, BBQ & Stargazing at Al Khayma Camp</h2>
+                <p>Free Cancellation</p>
+                <p class="price">From ₹15,033 per person</p>
+            </div>
+        </div>
+        <div class="tour-card">
+            <img src="https://imgs.search.brave.com/pc2drXz-O8f6Ng6szVdj2Enm3bzSXSc1r9n3kaCqaiE/rs:fit:500:0:0:0/g:ce/aHR0cHM6Ly9tZWRp/YS50YWNkbi5jb20v/bWVkaWEvYXR0cmFj/dGlvbnMtc3BsaWNl/LXNwcC0zNjB4MjQw/LzA2Lzc0LzE5L2M3/LmpwZw" alt="Atlantis">
+            <div class="tour-info">
+                <div class="rating">⭐ 4.8 (5,467)</div>
+                <h2>Atlantis Aquaventure Ticket (with options for Aquarium), Dubai</h2>
+                <p>Free Cancellation</p>
+                <p class="price">From ₹8,127 per person</p>
+            </div>
+        </div>
+        <div class="tour-card">
+            <img src="https://imgs.search.brave.com/LkIzluTz12CIJCqUOMer7FXkyZmjPnF4-0UMH98w60Y/rs:fit:500:0:0:0/g:ce/aHR0cHM6Ly9tZWRp/YS50YWNkbi5jb20v/bWVkaWEvYXR0cmFj/dGlvbnMtc3BsaWNl/LXNwcC02NzR4NDQ2/LzA2LzZjLzdkLzI2/LmpwZw" alt="Air Dinner">
+            <div class="tour-info">
+                <div class="rating">⭐ 4.7 (9548)</div>
+                <h2>On Air Dinner Adventure in Dubai</h2>
+                <p>Free Cancellation</p>
+                <p class="price">From ₹18,342 per person</p>
+            </div>
+        </div>
+        <div class="tour-card">
+        <img src="https://imgs.search.brave.com/fxQEeznTus9cngzapM68F3l9H8Pa9MTycTGiUSta_Ns/rs:fit:500:0:0:0/g:ce/aHR0cHM6Ly9yZXMu/a2xvb2suY29tL2lt/YWdlcy9mbF9sb3Nz/eS5wcm9ncmVzc2l2/ZSxxXzY1L2NfZmls/bCx3XzEyOTUsaF83/MjAvd184MCx4XzE1/LHlfMTUsZ19zb3V0/aF93ZXN0LGxfS2xv/b2tfd2F0ZXJfYnJf/dHJhbnNfeWhjbWgz/L2FjdGl2aXRpZXMv/Z2cyNWh3b3FiZ3Nx/d3hsaXNsbXovRHVi/YWlNYXJpbmFEaW5u/ZXJDcnVpc2UuanBn" alt="Marina dinner">
+            <div class="tour-info">
+                <div class="rating">⭐ 4.4 (985)</div>
+                <h2>Dubai Marina Dinner Cruise with Live Music & Drink Options</h2>
+                <p>Free Cancellation</p>
+                <p class="price">From ₹6,342 per person</p>
+            </div>
+        </div>
+        <div class="tour-card">
+            <img src="https://imgs.search.brave.com/hg1Nt5lXLOk-YxmrSEX47yaf9oFHDbr6-A-wBqWaUKw/rs:fit:500:0:0:0/g:ce/aHR0cHM6Ly9jZG4u/Y2l0eXRvdXJpbmR1/YmFpLmNvbS93cC1j/b250ZW50L3VwbG9h/ZHMvMjAyNC8wMi9t/dXNldW0tb2YtdGhl/LWZ1dHVyZS10aWNr/ZXRzLmpwZw" alt="Pinnacles Desert">
+            <div class="tour-info">
+                <div class="rating">⭐ 4.6 (8775)</div>
+                <h2>Museum of the Future Tickets</h2>
+                <p>Free Cancellation</p>
+                <p class="price">From ₹5,342 per person</p>
+            </div>
+        </div>
+        <div class="tour-card">
+            <img src="https://imgs.search.brave.com/aCvpGbepz1FgoPXX8qGUyNlAHtSAfQAWNxuHPXy9Z74/rs:fit:500:0:0:0/g:ce/aHR0cHM6Ly9oZWxp/Y29wdGVydG91cmR1/YmFpLmNvbS93cC1j/b250ZW50L3VwbG9h/ZHMvMjAyMS8xMi9E/dWJhaS1DaXR5LVRv/dXItSGVsaWNvcHRl/ci5qcGc" alt="Dubai Helicopter">
+            <div class="tour-info">
+                <div class="rating">⭐ 4.8 (875)</div>
+                <h2>Dubai Helicopter Experience with Sightseeing Options</h2>
+                <p>Free Cancellation</p>
+                <p class="price">From ₹16,342 per person</p>
+            </div>
+        </div>
+    </section>
+</body>
+</html>

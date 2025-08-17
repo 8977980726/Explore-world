@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Australia Top Tours & Activities</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #c3c6c7;
+}
+
+h1 {
+    text-align: center;
+    margin: 20px 0;
+    font-size: 2em;
+}
+
+.filter-buttons {
+    text-align: center;
+    margin: 20px 0;
+}
+
+.filter-buttons button,
+.filter-buttons select {
+    padding: 10px 20px;
+    margin: 5px;
+    border: 1px solid #ccc;
+    background-color: #e8e6e3;
+    cursor: pointer;
+}
+
+.filter-buttons span {
+    margin-left: 10px;
+}
+.tour-listings {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+    padding: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.tour-card {
+    background-color: #e8e6e3;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    overflow: hidden;
+    transition: transform 0.2s ease-in-out;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.tour-card:hover {
+    transform: translateY(-5px);
+}
+
+.tour-card img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+.tour-info {
+    padding: 15px;
+}
+
+.tour-info h2 {
+    font-size: 1.25em;
+    margin: 10px 0;
+}
+
+.tour-info p {
+    margin: 5px 0;
+    color: #666;
+}
+
+.tour-info .price {
+    font-weight: bold;
+    color: #000;
+}
+
+.tour-info .rating {
+    font-size: 0.9em;
+    color: #4CAF50;
+}
+
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Australia Top Tours & Activities</h1>
+        <div class="filter-buttons">
+            <button>Select Dates</button>
+            <button>All filters</button>
+            <span>167 Results</span>
+            <select>
+                <option value="featured">Sort by: Featured</option>
+                <option value="price">Price</option>
+                <option value="rating">Rating</option>
+            </select>
+        </div>
+    </header>
+
+    <section class="tour-listings">
+        <div class="tour-card">
+            <img src="https://imgs.search.brave.com/BOGgC5ePbyHsgt4xqQl375LTfIXMSoek0VlmSM2VKoc/rs:fit:500:0:0:0/g:ce/aHR0cHM6Ly9yZXMu/Y2xvdWRpbmFyeS5j/b20vYWRyZW5hbGlu/ZWNvbWF1L2ltYWdl/L3VwbG9hZC9xX2F1/dG8sZl9hdXRvL3Yx/NjI3ODY3NTMxL2Fk/dmVudHVyZXMvZXBz/XzE1NTIyLmpwZw" alt="Sydney Harbour Sunset Dinner Cruise">
+            <div class="tour-info">
+                <div class="rating">⭐ 4.5 (10,604)</div>
+                <h2>Sydney Harbour Sunset Dinner Cruise</h2>
+                <p>Free Cancellation</p>
+                <p>Duration: 6 hours</p>
+                <p class="price">From ₹6,239 per person</p>
+            </div>
+        </div>
+        <div class="tour-card">
+            <img src="https://imgs.search.brave.com/bWkWRgAuEi15AW0hG0oTbguxm7HIpgp6Q-oO7BbrKMA/rs:fit:500:0:0:0/g:ce/aHR0cHM6Ly90cm9w/aWNhbG5vcnRocXVl/ZW5zbGFuZC5vcmcu/YXUvd3AtY29udGVu/dC91cGxvYWRzL3F1/aWNrc2lsdmVyLXBv/bnRvb24tMTAyNHg2/NjIuanBn" alt="Snorkelling or Glass">
+            <div class="tour-info">
+                <div class="rating">⭐ 4.3 (379)</div>
+                <h2>Snorkelling or Glass Bottom Boat at Green Island from Cairns</h2>
+                <p>Free Cancellation</p>
+                <p>Duration: 1 hour 30 minutes</p>
+                <p class="price">From ₹6,584 per person</p>
+            </div>
+        </div>
+        <div class="tour-card">
+            <img src="https://imgs.search.brave.com/YpWPt_EawYRNWm1y1RxyeLoTqhgTLvA5iosIDx2US_Y/rs:fit:500:0:0:0/g:ce/aHR0cHM6Ly9pbWFn/ZXMuc3F1YXJlc3Bh/Y2UtY2RuLmNvbS9j/b250ZW50L3YxLzU3/MDVkZTU0ZTcwN2Vi/ZDY4ZDYwMDUxZC8x/NTkzOTI2NDUxMDYz/LU5NQVI3T01PVjdI/R0VKVk81STRFL2Js/dWUtbW91bnRhaW5z/LXByaXZhdGUtdG91/ci1zY2VuaWMtd29y/bGQtc2NlbmljLXJh/aWx3YXkuSlBH" alt="Blue Mountains">
+            <div class="tour-info">
+                <div class="rating">⭐ 4.6 (3,950)</div>
+                <h2>Blue Mountains: Three Sisters, Scenic World and Wildlife park</h2>
+                <p>Free Cancellation</p>
+                <p class="price">From ₹15,033 per person</p>
+            </div>
+        </div>
+        <div class="tour-card">
+            <img src="https://imgs.search.brave.com/_NznnQ9NR8nUhP5Xu0kHPkRtXISKRCySpY3ZREgEhcw/rs:fit:500:0:0:0/g:ce/aHR0cHM6Ly9tZWRp/YWltLmV4cGVkaWEu/Y29tL2xvY2FsZXhw/ZXJ0LzE5MDY3NS80/NWQ2ZWQ0Zi1lZGFj/LTRlMjYtOGNhNC0x/MjI2OGFjYjJjYTgu/anBnP2ltcG9saWN5/PXJlc2l6ZWNyb3Am/cnc9NTAwJnJoPTI4/MA" alt="Great Ocean Road Small-Group Ecotour from Melbourne">
+            <div class="tour-info">
+                <div class="rating">⭐ 4.8 (5,467)</div>
+                <h2>Great Ocean Road Small-Group Ecotour from Melbourne</h2>
+                <p>Free Cancellation</p>
+                <p class="price">From ₹8,127 per person</p>
+            </div>
+        </div>
+        <div class="tour-card">
+            <img src="https://imgs.search.brave.com/x4kQ6DxTyp0l0s_5letbmOuSEngl-rQA8qVFUUGdMyw/rs:fit:500:0:0:0/g:ce/aHR0cHM6Ly9jbXMt/Y2RuLnRyYXZlbGxp/bmsuY29tLmF1L3Zv/bHVtZXMvZnJhc2Vy/dG91cnMvaW1hZ2Vz/L19iYW5uZXJNb2Jp/bGUvQ2hhbXBhZ25l/LVBvb2xzLUtnYXJp/LWZvcm1lcmx5LUZy/YXNlci1Jc2xhbmQu/anBnP3Y9MTY4Nzcz/NzYwNiwwLjUwNyww/LjUxNzg" alt="K'gari">
+            <div class="tour-info">
+                <div class="rating">⭐ 4.7 (9548)</div>
+                <h2>K'gari (Fraser Island) All Inclusive Day</h2>
+                <p>Free Cancellation</p>
+                <p class="price">From ₹15,342 per person</p>
+            </div>
+        </div>
+        <div class="tour-card">
+            <img src="https://imgs.search.brave.com/XAdYqQG2zX-RY3buRTXQbDOSv_Yd1XVknUPovjuIT8E/rs:fit:500:0:0:0/g:ce/aHR0cHM6Ly93d3cu/dHJhdmVsbGluZ2tp/bmcuY29tL3dwLWNv/bnRlbnQvdXBsb2Fk/cy8yMDIzLzA4L01l/bGJvdXJuZS1QaGls/bGlwLUlzbGFuZC1z/a3lsaW5lLTEwMDB4/NjY3LmpwZw" alt="Phillip Island Penguin">
+            <div class="tour-info">
+                <div class="rating">⭐ 4.4 (985)</div>
+                <h2>Phillip Island Penguin, Brighton Beach, Moonlit Sanctuary from Melbourne</h2>
+                <p>Free Cancellation</p>
+                <p class="price">From ₹10,342 per person</p>
+            </div>
+        </div>
+        <div class="tour-card">
+            <img src="https://imgs.search.brave.com/22c8F2UDhYDD-0adPWZ60n9slyxeusjndEVFuYWcw_I/rs:fit:500:0:0:0/g:ce/aHR0cHM6Ly9wcm9k/LXJ0ZS1zdGF0aWMu/cmFrdXRlbnRyYXZl/bHhjaGFuZ2UuY29t/LzVjM2UzYTI3LTVm/M2ItNGEyNy1hYjkw/LWViNmMwZjEwNmMz/Ni5qcGc_aGVpZ2h0/PTEwMDAmZm9ybWF0/PXdlYnA" alt="Pinnacles Desert">
+            <div class="tour-info">
+                <div class="rating">⭐ 4.6 (875)</div>
+                <h2>Pinnacles Desert Sunset Dinner and Stargazing Tour</h2>
+                <p>Free Cancellation</p>
+                <p class="price">From ₹11,342 per person</p>
+            </div>
+        </div>
+    </section>
+</body>
+</html>

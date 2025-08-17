@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Newzealand Top Tours & Activities</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #c3c6c7;
+}
+
+h1 {
+    text-align: center;
+    margin: 20px 0;
+    font-size: 2em;
+}
+
+.filter-buttons {
+    text-align: center;
+    margin: 20px 0;
+}
+
+.filter-buttons button,
+.filter-buttons select {
+    padding: 10px 20px;
+    margin: 5px;
+    border: 1px solid #ccc;
+    background-color: #e8e6e3;
+    cursor: pointer;
+}
+
+.filter-buttons span {
+    margin-left: 10px;
+}
+.tour-listings {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+    padding: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.tour-card {
+    background-color: #e8e6e3;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    overflow: hidden;
+    transition: transform 0.2s ease-in-out;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.tour-card:hover {
+    transform: translateY(-5px);
+}
+
+.tour-card img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+.tour-info {
+    padding: 15px;
+}
+
+.tour-info h2 {
+    font-size: 1.25em;
+    margin: 10px 0;
+}
+
+.tour-info p {
+    margin: 5px 0;
+    color: #666;
+}
+
+.tour-info .price {
+    font-weight: bold;
+    color: #000;
+}
+
+.tour-info .rating {
+    font-size: 0.9em;
+    color: #4CAF50;
+}
+
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Newzealand Top Tours & Activities</h1>
+        <div class="filter-buttons">
+            <button>Select Dates</button>
+            <button>All filters</button>
+            <span>111 Results</span>
+            <select>
+                <option value="featured">Sort by: Featured</option>
+                <option value="price">Price</option>
+                <option value="rating">Rating</option>
+            </select>
+        </div>
+    </header>
+
+    <section class="tour-listings">
+        <div class="tour-card">
+            <img src="https://imgs.search.brave.com/ceUtyhal1Nb1zKsd2ZXxITVFSmhHcWdIFu1y7up7qt0/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9tYWlu/LWNkbi5ncmFib25l/LmNvLm56L2dvaW1h/Z2UvZnVsbHNpemUv/ZDY2ZWRkMDY2MDM0/MGZiNmRiZTA2NjA0/ZWI5ZTkxZWYzZGVl/NTA5YS5qcGc" alt="Cruise Milford">
+            <div class="tour-info">
+                <div class="rating">⭐ 4.8 (10,604)</div>
+                <h2>Cruise Milford NZ Small Boutique Cruise Experience</h2>
+                <p>Free Cancellation</p>
+                <p>Duration: 6 hours</p>
+                <p class="price">From ₹7,529 per person</p>
+            </div>
+        </div>
+        <div class="tour-card">
+            <img src="https://imgs.search.brave.com/gyXn5qTI6KYjADrBcw1uR1B9aWkOD0wJj6WHzSBTY9I/rs:fit:500:0:0:0/g:ce/aHR0cHM6Ly9ib29r/bWVzdGF0aWMubmV0/Lm56L2Jvb2ttZS1y/ZXZpZXctaW1hZ2Vz/L3Jldmlld3MvOWNl/MDNmNDUtY2JkZC00/NGM2LWFhYTUtMGEw/MDExODI0NzAxLmpw/Zw" alt="Hobbiton & Waitomo Caves">
+            <div class="tour-info">
+                <div class="rating">⭐ 4.7 (379)</div>
+                <h2>Hobbiton & Waitomo Caves Guided Day Trip from Auckland incl lunch</h2>
+                <p>Free Cancellation</p>
+                <p>Duration: 1 hour 30 minutes</p>
+                <p class="price">From ₹9,344 per person</p>
+            </div>
+        </div>
+        <div class="tour-card">
+            <img src="https://imgs.search.brave.com/A2pCC7T1MjzpeOsJIUmGMigQIiCpGW94yFnselAsnek/rs:fit:500:0:0:0/g:ce/aHR0cHM6Ly93d3cu/bWlsZm9yZC1zb3Vu/ZC5jby5uei93cC1j/b250ZW50L3VwbG9h/ZHMvMjAyNC8wMi9N/aWxmb3JkLVNvdW5k/LU92ZXJuaWdodC1D/cnVpc2UtQ3JlZGl0/LUdyZWF0LVNvdXRo/LTIuanBn" alt="Premium Milford">
+            <div class="tour-info">
+                <div class="rating">⭐ 4.6 (3,950)</div>
+                <h2>Premium Milford Sound Small Group Tour & Cruise from Queenstown</h2>
+                <p>Free Cancellation</p>
+                <p class="price">From ₹4,533 per person</p>
+            </div>
+        </div>
+        <div class="tour-card">
+            <img src="https://imgs.search.brave.com/T0v89rXD1btXuOTQZblBaGnD8AKpq8FPINi0_Bngkts/rs:fit:500:0:0:0/g:ce/aHR0cHM6Ly9teXF1/ZWVuc3Rvd25kaWFy/eS5jb20vd3AtY29u/dGVudC91cGxvYWRz/LzIwMjEvMDYvTWls/Zm9yZC1GbGlnaHQt/MS5qcGc" alt="Milford Sound Fly Cruise">
+            <div class="tour-info">
+                <div class="rating">⭐ 4.3 (5,467)</div>
+                <h2>Milford Sound Fly Cruise Fly ex Queenstown</h2>
+                <p>Free Cancellation</p>
+                <p class="price">From ₹8,127 per person</p>
+            </div>
+        </div>
+        <div class="tour-card">
+            <img src="https://imgs.search.brave.com/YGM54N4kRH7PsoyKleX9e8AZ1-PcfsO3v8SXcLgGVa4/rs:fit:500:0:0:0/g:ce/aHR0cHM6Ly93d3cu/ZnJhbnpqb3NlZmds/YWNpZXIuY29tL2Fz/c2V0cy9VcGxvYWRz/L0ZyYW56LUpvc2Vm/LUdsYWNpZXItR3Vp/ZGVzLUhlcm8tSGln/aC1SZXMtQ01ZSy0z/NjMwMl9fRmlsbE1h/eFd6RTJOVEFzTVRB/d01GMC5qcGc" alt="Franz Josef Glacier Heli-Hike">
+            <div class="tour-info">
+                <div class="rating">⭐ 4.5 (562)</div>
+                <h2>Franz Josef Glacier Heli-Hike</h2>
+                <p>Free Cancellation</p>
+                <p class="price">From ₹18,342 per person</p>
+            </div>
+        </div>
+        <div class="tour-card">
+            <img src="https://imgs.search.brave.com/XNRwkAMRUNrar6j6ds5uJW7Sai7MoL21wbTnCuaq18E/rs:fit:500:0:0:0/g:ce/aHR0cHM6Ly9tZWRp/YS50YWNkbi5jb20v/bWVkaWEvYXR0cmFj/dGlvbnMtc3BsaWNl/LXNwcC02NzR4NDQ2/LzA2LzcxLzRjLzAx/LmpwZw" alt="Waitomo Glowworm Caves Guided Tour">
+            <div class="tour-info">
+                <div class="rating">⭐ 4.7 (512)</div>
+                <h2>Waitomo Glowworm Caves Guided Tour</h2>
+                <p>Free Cancellation</p>
+                <p class="price">From ₹12,342 per person</p>
+            </div>
+        </div>
+    </section>
+</body>
+</html>

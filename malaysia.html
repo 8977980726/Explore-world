@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Malaysia Top Tours & Activities</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #c3c6c7;
+}
+
+h1 {
+    text-align: center;
+    margin: 20px 0;
+    font-size: 2em;
+}
+
+.filter-buttons {
+    text-align: center;
+    margin: 20px 0;
+}
+
+.filter-buttons button,
+.filter-buttons select {
+    padding: 10px 20px;
+    margin: 5px;
+    border: 1px solid #ccc;
+    background-color: #e8e6e3;
+    cursor: pointer;
+}
+
+.filter-buttons span {
+    margin-left: 10px;
+}
+.tour-listings {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+    padding: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.tour-card {
+    background-color: #e8e6e3;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    overflow: hidden;
+    transition: transform 0.2s ease-in-out;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.tour-card:hover {
+    transform: translateY(-5px);
+}
+
+.tour-card img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+.tour-info {
+    padding: 15px;
+}
+
+.tour-info h2 {
+    font-size: 1.25em;
+    margin: 10px 0;
+}
+
+.tour-info p {
+    margin: 5px 0;
+    color: #666;
+}
+
+.tour-info .price {
+    font-weight: bold;
+    color: #000;
+}
+
+.tour-info .rating {
+    font-size: 0.9em;
+    color: #4CAF50;
+}
+
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Malaysia Top Tours & Activities</h1>
+        <div class="filter-buttons">
+            <button>Select Dates</button>
+            <button>All filters</button>
+            <span>125 Results</span>
+            <select>
+                <option value="featured">Sort by: Featured</option>
+                <option value="price">Price</option>
+                <option value="rating">Rating</option>
+            </select>
+        </div>
+    </header>
+
+    <section class="tour-listings">
+        <div class="tour-card">
+            <img src="https://imgs.search.brave.com/lGwTss3zlApNCcyeQiLxoZvGc783mbeVNjzb9GP8qKg/rs:fit:500:0:0:0/g:ce/aHR0cHM6Ly9tZWRp/YS1jZG4udHJpcGFk/dmlzb3IuY29tL21l/ZGlhL2F0dHJhY3Rp/b25zLXNwbGljZS1z/cHAtNjc0eDQ0Ni8w/Ny84Zi8xNy81MS5q/cGc" alt="Private Genting Highlands">
+            <div class="tour-info">
+                <div class="rating">⭐ 4.8 (10,604)</div>
+                <h2>Private Genting Highlands & Batu Caves Trip with Cable Car Ticket</h2>
+                <p>Free Cancellation</p>
+                <p>Duration: 6 hours</p>
+                <p class="price">From ₹5,529 per person</p>
+            </div>
+        </div>
+        <div class="tour-card">
+            <img src="https://imgs.search.brave.com/4QYJ5hJID4_XBfpUBNTh6I6EU2QJoZKTYBp7ioLcAgg/rs:fit:500:0:0:0/g:ce/aHR0cHM6Ly93d3cu/a3VhbGEtc2VsYW5n/b3IuY29tL2ltYWdl/cy9hdHRyYWN0aW9u/L2JsdWUtdGVhcnMv/Ymx1ZS10ZWFycy1p/bi1rdWFsYS1zZWxh/bmdvci0yLmpwZw" alt="Amazing Fireflies">
+            <div class="tour-info">
+                <div class="rating">⭐ 4.5 (379)</div>
+                <h2>Amazing Fireflies With Blue Tears Watching & Kuala Selangor Tour</h2>
+                <p>Free Cancellation</p>
+                <p>Duration: 1 hour 30 minutes</p>
+                <p class="price">From ₹3,584 per person</p>
+            </div>
+        </div>
+        <div class="tour-card">
+            <img src="https://imgs.search.brave.com/pTtsIyqLdqm7hY5WP17EvWE8cBysbawl5N55tMC5XBw/rs:fit:500:0:0:0/g:ce/aHR0cDovL2Zhcm04/LnN0YXRpY2ZsaWNr/ci5jb20vNzE1MS82/NDg3MTU2ODg1XzU5/MWIxOTdjMzUuanBn" alt="Kuala Lumpur International">
+            <div class="tour-info">
+                <div class="rating">⭐ 4.6 (3,950)</div>
+                <h2>Kuala Lumpur International Airport Layover Tour</h2>
+                <p>Free Cancellation</p>
+                <p class="price">From ₹6,033 per person</p>
+            </div>
+        </div>
+        <div class="tour-card">
+            <img src="https://imgs.search.brave.com/8JmCeSvtjQcLym5pWZelvl1NOpSwul-LSw4Mnl3l3Ww/rs:fit:500:0:0:0/g:ce/aHR0cHM6Ly91cGxv/YWQud2lraW1lZGlh/Lm9yZy93aWtpcGVk/aWEvY29tbW9ucy8w/LzA3L1BlbmFuZ19L/ZWtfTG9rX1NpX1Rl/bXBsZV9PY3RhZ29u/YWxfUGF2aWxpb24u/anBn" alt="Georgetown City & Temple Tour">
+            <div class="tour-info">
+                <div class="rating">⭐ 4.8 (5,467)</div>
+                <h2>Georgetown City & Temple Tour: Penang Hill(FastLane) & Kek Lok Si</h2>
+                <p>Free Cancellation</p>
+                <p class="price">From ₹8,127 per person</p>
+            </div>
+        </div>
+        <div class="tour-card">
+            <img src="https://imgs.search.brave.com/l93wvDLtNnzvg6OBq6DA9SxJ7RUUd_vnqjslRlqCZbA/rs:fit:500:0:0:0/g:ce/aHR0cHM6Ly93d3cu/Y29zdGFyaWNhZmF5/bGF0b3Vycy5jb20v/d3AtY29udGVudC91/cGxvYWRzLzIwMTgv/MTIvYXR2LXRvdXIt/Z3VhbmFjYXN0ZS0y/LWUxNTUyMDIxMTcy/ODA4LmpwZw" alt="ATV Nature Off-road Ride">
+            <div class="tour-info">
+                <div class="rating">⭐ 4.2 (512)</div>
+                <h2>ATV Nature Off-road Ride to Jungle Waterfall with Private Pickup</h2>
+                <p>Free Cancellation</p>
+                <p class="price">From ₹15,342 per person</p>
+            </div>
+        </div>
+        <div class="tour-card">
+            <img src="https://imgs.search.brave.com/aLvYEUFhBaBRSxV_-UL9rCbPLkk-IeZFMBzo7xyZiVI/rs:fit:500:0:0:0/g:ce/aHR0cHM6Ly9tZWRp/YS50YWNkbi5jb20v/bWVkaWEvYXR0cmFj/dGlvbnMtc3BsaWNl/LXNwcC0zNjB4MjQw/LzA5L2QwL2Y4Lzcy/LmpwZw" alt="Kuala Selangor Firefly">
+            <div class="tour-info">
+                <div class="rating">⭐ 4.7 (962)</div>
+                <h2>Kuala Selangor Firefly Boat Tour with Roundtrip Transfer from Kuala Lumpur</h2>
+                <p>Free Cancellation</p>
+                <p class="price">From ₹11,342 per person</p>
+            </div>
+        </div>
+        <div class="tour-card">
+            <img src="https://imgs.search.brave.com/S2ZK4F3yYJJUvl7bFALWwHlPYG0XpbkZ_FI9E1-N3jE/rs:fit:500:0:0:0/g:ce/aHR0cHM6Ly9yZXMu/a2xvb2suY29tL2lt/YWdlcy9mbF9sb3Nz/eS5wcm9ncmVzc2l2/ZSxxXzY1L2NfZmls/bCx3XzEyOTUsaF84/NjMvd184MCx4XzE1/LHlfMTUsZ19zb3V0/aF93ZXN0LGxfS2xv/b2tfd2F0ZXJfYnJf/dHJhbnNfeWhjbWgz/L2FjdGl2aXRpZXMv/Z3NxdTV6Y3p3a2Zo/Z3ZrNWJ5YmYvRmly/ZWZsaWVzQm9hdENy/dWlzZUV4cGVyaWVu/Y2Vpbkt1YWxhU2Vs/YW5nb3IuanBn" alt="Glowing Kuala Selangor">
+            <div class="tour-info">
+                <div class="rating">⭐ 4.1 (822)</div>
+                <h2>Glowing Kuala Selangor Firefly Tour</h2>
+                <p>Free Cancellation</p>
+                <p class="price">From ₹9,342 per person</p>
+            </div>
+        </div>
+    </section>
+</body>
+</html>

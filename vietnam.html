@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Vietnam Top Tours & Activities</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        /* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #c3c6c7;
+}
+
+h1 {
+    text-align: center;
+    margin: 20px 0;
+    font-size: 2em;
+}
+
+.filter-buttons {
+    text-align: center;
+    margin: 20px 0;
+}
+
+.filter-buttons button,
+.filter-buttons select {
+    padding: 10px 20px;
+    margin: 5px;
+    border: 1px solid #ccc;
+    background-color: #e8e6e3;
+    cursor: pointer;
+}
+
+.filter-buttons span {
+    margin-left: 10px;
+}
+
+/* Tour Listings Section */
+.tour-listings {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+    padding: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.tour-card {
+    background-color: #e8e6e3;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    overflow: hidden;
+    transition: transform 0.2s ease-in-out;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.tour-card:hover {
+    transform: translateY(-5px);
+}
+
+.tour-card img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+.tour-info {
+    padding: 15px;
+}
+
+.tour-info h2 {
+    font-size: 1.25em;
+    margin: 10px 0;
+}
+
+.tour-info p {
+    margin: 5px 0;
+    color: #666;
+}
+
+.tour-info .price {
+    font-weight: bold;
+    color: #000;
+}
+
+.tour-info .rating {
+    font-size: 0.9em;
+    color: #4CAF50;
+}
+
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Vietnam Top Tours & Activities</h1>
+        <div class="filter-buttons">
+            <button>Select Dates</button>
+            <button>All filters</button>
+            <span>118 Results</span>
+            <select>
+                <option value="featured">Sort by: Featured</option>
+                <option value="price">Price</option>
+                <option value="rating">Rating</option>
+            </select>
+        </div>
+    </header>
+
+    <section class="tour-listings">
+        <!-- First tour card -->
+        <div class="tour-card">
+            <img src="https://media.tacdn.com/media/attractions-splice-spp-674x446/10/6f/41/11.jpg" alt="God Tier: All-Inclusive OVERNIGHT Halong Cruises - many options">
+            <div class="tour-info">
+                <div class="rating">⭐ 4.8 (10,344)</div>
+                <h2>God Tier: All-Inclusive OVERNIGHT Halong Cruises - many options</h2>
+                <p>Free Cancellation</p>
+                <p class="price">From ₹8,699 per person</p>
+            </div>
+        </div>
+
+        <!-- Second tour card -->
+        <div class="tour-card">
+            <img src="https://media.tacdn.com/media/attractions-splice-spp-674x446/12/d7/66/25.jpg" alt="BEST SELLER - Halong 5 Star Day Cruise: Buffet, Wine & Jacuzzi">
+            <div class="tour-info">
+                <div class="rating">⭐ 4.8 (384)</div>
+                <h2>BEST SELLER - Halong 5 Star Day Cruise: Buffet, Wine & Jacuzzi</h2>
+                <p>Free Cancellation</p>
+                <p>Duration: 2 days 3 nights</p>
+                <p class="price">From ₹9,499 per person</p>
+            </div>
+        </div>
+
+        <!-- Third tour card -->
+        <div class="tour-card">
+            <img src="https://media.tacdn.com/media/attractions-splice-spp-674x446/10/7b/d4/9c.jpg" alt="Cu Chi Tunnels and Mekong Delta - Luxury Tour from HCM City">
+            <div class="tour-info">
+                <div class="rating">⭐ 4.8 (3,956)</div>
+                <h2>Golden Circle and Glacier Snowmobiling Day Trip from Reykjavik</h2>
+                <p>Refundable</p>
+                <p class="price">From ₹8,099 per person</p>
+            </div>
+        </div>
+
+        <!-- Fourth tour card -->
+        <div class="tour-card">
+            <img src="https://media.tacdn.com/media/attractions-splice-spp-674x446/10/7b/d4/1a.jpg" alt="3-Day Hanoi-Ninh Binh-Halong-Lan Ha Bay 5 Star Cruise & Balcony">
+            <div class="tour-info">
+                <div class="rating">⭐ 4.8 (5,787)</div>
+                <h2>3-Day Hanoi-Ninh Binh-Halong-Lan Ha Bay 5 Star Cruise & Balcony</h2>
+                <p>No Cancellation</p>
+                <p class="price">From ₹5,499 per person</p>
+            </div>
+        </div>
+
+        <!-- Fifth tour card -->
+        <div class="tour-card">
+            <img src="https://media.tacdn.com/media/attractions-splice-spp-674x446/07/74/57/bd.jpg" alt="Ninh Binh Full-Day Tour from Hanoi to Hoa Lu, Tam Coc & Mua Cave Via Boat & Bike">
+            <div class="tour-info">
+                <div class="rating">⭐ 4.9 (8,934)</div>
+                <h2>Ninh Binh Full-Day Tour from Hanoi to Hoa Lu, Tam Coc & Mua Cave Via Boat & Bike</h2>
+                <p>Free Cancellation</p>
+                <p class="price">From ₹8,999 per person</p>
+            </div>
+        </div>
+    </section>
+</body>
+</html>
