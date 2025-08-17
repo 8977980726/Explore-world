@@ -1,0 +1,459 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>ExploreWorld</title>
+ <title>TOURISM PORTAL</title>
+<style>
+ body {
+    background-color:#e8e6e3;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.header {
+    background: black;
+    color:white;
+    padding: 1rem;
+    display:flex;
+    justify-content: space-between;
+   align-items: center;
+}
+.header .logo {
+    font-size: 1.5rem;
+    font-weight: bold;}
+.header nav ul {
+    list-style: none;
+    display: flex;
+    gap: 1rem;
+}
+.header nav ul li{
+    font-size: 20px;
+    margin-top: -0px;
+
+}
+.header nav ul a{
+    color: rgb(247, 240, 240);
+    text-decoration: none;
+    padding: 0.5rem;
+}
+.header nav ul a:hover{
+    background-color:cornflowerblue;
+    border-radius: 4px;
+}
+.header1{
+    background-position-y: -3cm;
+    background-size: cover;
+    color:#000000;
+    text-align:center;
+   background-image: url(https://images.pexels.com/photos/697662/pexels-photo-697662.jpeg?auto=compress&cs=tinysrgb&w=600);
+   padding: 7rem 5rem;
+}  
+.destinations {
+    padding: 3rem 0;
+    text-align: center;
+}
+.destinations h2 {
+    font-size: 2rem;
+    margin-bottom: 2rem;   
+}
+.destinations .pics {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 1rem;
+}
+.destinations .card {
+    background-color: #c3c6c7;
+    padding: 1rem;
+    border-radius: 10px;
+    transition: transform 0.5s ease;
+}
+.destinations .card img {
+    width: 100%;
+    border-radius: 10px;
+}
+.destinations .card img:hover{
+    cursor: pointer;
+}
+.destinations .card:hover {
+    transform:translateY(-20px)    
+} 
+.contact {
+    padding: 3rem 0;
+    text-align: center;}
+.contact form{
+    text-align: center;
+    border: rgb(50, 49, 49) solid 3px;
+    flex-direction: column;
+    display: flex;
+    margin: auto;
+    width: 600px;
+    padding: 5px;
+    gap:1rem;
+    border-radius: 8px;
+}
+.contact form input{
+    padding:10px ; border-radius: 8px;
+}
+footer{
+    background-color: #333;
+    color: white;
+    text-align:center;
+    padding: 4rem;
+    margin-bottom:-70px;
+}
+.contact form .button1:hover {
+    background-color: #555;
+}
+h5{
+    font-size: 30px;
+}
+.logo img{
+    width: 100%;
+    background-size: cover;
+    overflow: hidden;
+}
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f5f5f5;
+}
+footer {
+    background-color: #212020;
+    color: white;
+    padding: 40px 0;
+}
+.footer-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+.column {
+    width: 16%;
+    margin-bottom: 20px;
+}
+h3 {
+    font-size: 18px;
+    margin-bottom: 15px;
+}
+ul {
+    list-style: none;
+}
+ul li {
+    margin-bottom: 10px;
+    font-size: 14px;
+}
+ul li:hover {
+    text-decoration: underline;
+    cursor: pointer;
+}
+@media screen and (max-width: 768px) {
+    .column {
+        width: 45%;
+        margin-bottom: 30px;
+    }
+}
+@media screen and (max-width: 480px) {
+    .column {
+        width: 100%;
+        text-align: center;
+    }
+}
+svg {
+    margin: 10px;
+    cursor: pointer;
+    transition: stroke 0.3s;
+    color: #ffffff;    
+}
+a[href*="instagram"]:hover svg {
+    stroke: #fd57b8; /* Instagram color */
+}
+a[href*="facebook"]:hover svg {
+    stroke: #1877F2; /* Facebook blue */
+}
+svg:hover {
+    stroke: #000000; /* Twitter Blue */
+    background-color: #ffffff;
+}
+a[href*="youtube"]:hover svg {
+    stroke: #FF0000; /* YouTube Red */
+    width: 3.5%;
+}
+.social-media {
+    display: flex;
+    flex-direction: column; /* Arrange icons vertically */
+    position: fixed;        /* Keep the icons fixed to the left side */
+    top: 50%;               /* Center vertically */
+    left: 0;                /* Align to the left edge */
+    transform: translateY(-50%); 
+    gap: 20px;              
+    padding-left: 10px;  
+}
+.logo-container {
+            display: flex;
+            align-items: center;
+            padding: 10px;
+        }
+        .logo-container img {
+            width: 50px;
+            height: 50px;
+            margin-right: 5px;
+            margin-top: -10px;
+        }
+
+        .logo-container h1 {
+            font-size: 35px;
+            color: #ffffff;
+            margin: 0;
+            margin-top: -10px;
+            padding: 0;
+            font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+        }
+
+      
+</style>
+    </head>
+    <body>
+        <header>
+        <div class="header">
+            <div class="logo-container">
+                <img src="https://files.oaiusercontent.com/file-kNL1QuZy5PTX61NpylTLd5un?se=2024-10-29T18%3A58%3A35Z&sp=r&sv=2024-08-04&sr=b&rscc=max-age%3D604800%2C%20immutable%2C%20private&rscd=attachment%3B%20filename%3Dce997822-3921-4400-b1c0-bfada5248268.webp&sig=PhppGmJyzl9y5WOMuaFAjNYlQbOqw33WL4wR7WmULLA%3D" alt="Explore World Logo">
+                <h1>ExploreWorld</h1>
+            </div>
+            <nav class="navbar">
+                <ul>
+                    <li><a href="minion project.html" >HOME</a></li>
+                    <li><a href="services.html">SERVICES</a></li>
+                    <li><a href="about us .html" >INFO</a></li> 
+                    <li><a href="signup.html" >LOGIN</a></li>                        
+                </ul>
+            </nav>
+        </div>
+        </header>
+        <div class="header1">
+            <h1>Discover Amazing Places Around the World</h1>
+            <br>
+            <br>
+        <h5>Plan your perfect vacation with us!</h5>
+        </div>
+        <div id="destinations" class="destinations">
+            <h2>Popular Destinations</h2>
+            <div class="pics">
+                <div class="card">
+                    <a href="malaysia.html"><img src="https://imgs.search.brave.com/Oa611JfZ7k5vSqAqSQOEn7L-FXo0jFH40_F1i_F58Jc/rs:fit:500:0:0:0/g:ce/aHR0cHM6Ly90My5m/dGNkbi5uZXQvanBn/LzAxLzU3LzYxLzc2/LzM2MF9GXzE1NzYx/NzYwNF92TFNVNm5N/WjRIc1BNYzFoVFBo/U1dtUXZwWWhnNzdD/cy5qcGc" alt="malaysia"></a>
+                    <h3>Malaysia</h3>
+                    <p>Cuisine and Islands are fascinating</p>
+                </div>
+                <div class="card">
+                    <a href="united kingdom.html"><img src="https://imgs.search.brave.com/suVl06OaKiviR90_k9lAZwCXKMx6B8ZNkTrwW0X4Ej0/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly90aGVt/eXN0ZXJpb3Vzd29y/bGQuY29tL3dwLWNv/bnRlbnQvdXBsb2Fk/cy8yMDE0LzA2L0xP/TkRPTmV5ZS5qcGc" alt="United Kngdom"></a>
+                    <h3>United Kingdom</h3>
+                    <p>Just close your eyes and think of England</p>
+                </div>
+                <div class="card">
+                    <a href="australia.html"><img src="https://imgs.search.brave.com/tFxMgJ_BeDL7XkS1qly8hnzWLyTCjGw0ON2vo021MUs/rs:fit:500:0:0:0/g:ce/aHR0cHM6Ly9weXQt/YmxvZ3MuaW1naXgu/bmV0LzIwMjIvMTEv/c3lkbmV5LW9wZXJh/LWhvdXNlLWc1ZjA0/MjA4YzVfMTkyMC5q/cGc_YXV0bz1mb3Jt/YXQmZml0PXNjYWxl/Jmg9Njg0Jml4bGli/PXBocC0zLjMuMCZ3/PTEwMjQmd3BzaXpl/PWxhcmdl" alt="Australia"></a>
+                    <h3>Australia</h3>
+                    <p>Australia is just so full of surprises</p>
+                </div>
+                <div class="card">
+                    <a href="newzealand.html"><img src="https://www.holidify.com/images/bgImages/QUEENSTOWN.jpg" alt="Newzealand"></a>
+                    <h3>Newzealand</h3>
+                    <p>New Zealand is not a small country but a large village.</p>
+                </div>
+                <div class="card">
+                    <a href="bali.html"><img src="https://imgs.search.brave.com/CVe80ANELOzB77tEGwrhte4-9X6WyNh0x5CS-2BqSOA/rs:fit:500:0:0:0/g:ce/aHR0cHM6Ly93d3cu/YWdvZGEuY29tL3dw/LWNvbnRlbnQvdXBs/b2Fkcy8yMDIwLzAx/L0Jlc2FraWgtVGVt/cGxlLXBsYWNlcy10/by12aXNpdC1pbi1C/YWxpLmpwZw" alt="Bali"></a>
+                    <h4>Bali</h4>
+                    <p>A tropical paradise in Indonesia.</p>
+                    </div>
+                    <div class="card">
+                        <a href="paris.html"><img src="https://imgs.search.brave.com/pDh6m-LU3YdMA7Dd4l9VQHbXyzfLPZ3jOdq5dujFjtA/rs:fit:500:0:0:0/g:ce/aHR0cHM6Ly9pbWFn/ZWRlbGl2ZXJ5Lm5l/dC8wTE1Zb3NLZW81/by1MWE9DamRLVXVB/L3RvdXJzY2FubmVy/LmNvbS8yMDIyLzA4/L2Jlc3QtYXR0cmFj/dGlvbnMtaW4tUGFy/aXMtRnJhbmNlLmpw/Zy93PTEyMDA.jpeg" alt="Paris"></a>
+                        <h3>Paris</h3>
+                        <p>The city of lights and love.</p>
+                    </div>
+                    <div class="card">
+                        <a href="iceland.html"><img src="https://imgs.search.brave.com/0bdIGPdIBNQha2tJUTykCcVd12NtL-fvEBcM5rYdSyo/rs:fit:500:0:0:0/g:ce/aHR0cHM6Ly9lNDk4/cmN6ZGpnNi5leGFj/dGRuLmNvbS93cC1j/b250ZW50L3VwbG9h/ZHMvMjAyMy8wNS9G/YXhpLXdhdGVyZmFs/bC1pbi1JY2VsYW5k/LTctMTAyNHg2OTIu/anBnP3N0cmlwPWFs/bCZsb3NzeT0xJnNz/bD0x" alt="Iceland"></a>
+                        <h3>Iceland</h3>
+                        <p>The landscapes of Iceland are like the poetry of Earth</p>
+                    </div>
+                    <div class="card">
+                        <a href="newyork.html"><img src="https://imgs.search.brave.com/XKRHoxoH2hcbPcC8QPODvjGVrHmh1aDpnipS4jPZJQM/rs:fit:500:0:0:0/g:ce/aHR0cHM6Ly93d3cu/c21hcnRlcnRyYXZl/bC5jb20vd3AtY29u/dGVudC93ZWJwLWV4/cHJlc3Mvd2VicC1p/bWFnZXMvZG9jLXJv/b3Qvd3AtY29udGVu/dC91cGxvYWRzLzIw/MTEvMDYvYnJvb2ts/eW5icmlkZ2UuanBn/LndlYnA" alt="New York"></a>
+                        <h3>New York</h3>
+                        <p>The city that never sleeps.</p>
+                    </div>
+                    <div class="card">
+                        <a href="spain.html"><img src="https://imgs.search.brave.com/8uvz7mYooZLRFBQepuABznNv6Vi-92WMWZzQivH3h28/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly93d3cu/b250aGVnb3RvdXJz/LmNvbS9yZXBvc2l0/b3J5L01hZHJpZC0t/QmVzdC1wbGFjZXMt/dG8tdmlzaXQtaW4t/U3BhaW4tLU9uLVRo/ZS1Hby1Ub3Vycy0z/NTQ3OTE1MDEwNzg0/MzVfY3JvcF83MTBf/MC5qcGc" alt="Spain"></a>
+                        <h3>Spain</h3>
+                        <p>The soul of Spain is found in its history and culture</p>
+                        </div>
+                        <div class="card">
+                            <a href="chile.html"></a><img src="https://imgs.search.brave.com/-pIimgfmQf-Mba7FKpBfNZYoCTZ38gslNvzX4TEvSkE/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly90aG90/aC5waWNrdmlzYS5j/b20vd3AtY29udGVu/dC91cGxvYWRzLzIw/MjEvMTIvNmUxN2Rh/NTc3ZmEwNGRmMGJk/OWU0YzFlZWFjMzEx/MmIuanBn" alt="Chile"></a>
+                            <h3>Chile</h3>
+                            <p>Where the Andes meet the ocean, a land of resilience and breathtaking beauty</p> </div>
+                    <div class="card">
+                        <a href="dubai.html"><img src="https://imgs.search.brave.com/IRIZIuRfJ4B_gvgDMOrf_2rex6qdd3d5Y_yG8Ybu8Zw/rs:fit:500:0:0:0/g:ce/aHR0cHM6Ly9tZWRp/YS5nZXR0eWltYWdl/cy5jb20vaWQvMTIw/MDkyNDIwMy9waG90/by9hZXJpYWwtdmll/dy1vZi10aGUtcGFs/bS1qdW1laXJhaC1p/bi1kdWJhaS5qcGc_/cz02MTJ4NjEyJnc9/MCZrPTIwJmM9MG1v/MS1zTTh1clJHOVNS/Mi1UXzYwNG9aX25l/eFZQdkl3TFFyX3FH/MUo2TT0" alt="Dubai"></a>
+                        <h3>Dubai</h3>
+                        <p>Where the desert meets the future</p>
+                    </div>
+                    <div class="card">
+                        <a href="brazil.html"><img src="https://imgs.search.brave.com/7QxsKL4ALijG0A5hcS3-D2RTUZC7S6kdqa4cYkUsMFM/rs:fit:500:0:0:0/g:ce/aHR0cHM6Ly93d3cu/bWFwcHIuY28vd3At/Y29udGVudC91cGxv/YWRzLzIwMjEvMDQv/aW1hZ2UtMTMyLmpw/ZWc" alt="Brazil"></a>
+                        <h3>Brazil</h3>
+                        <p>A land where the rhythm of life dances to the beat of samba</p>
+                    </div>
+                    <div class="card">
+                        <a href="turkey.html"><img src="https://imgs.search.brave.com/Y0rS1e9nwM_9NYvF2CDJ0_2vtYeSxUezdD1aqyKCFi0/rs:fit:500:0:0:0/g:ce/aHR0cHM6Ly9tZWRp/YS5nZXR0eWltYWdl/cy5jb20vaWQvNTI3/ODYzMDMzL3Bob3Rv/L3N1bnNldC1pbi1p/c3RhbmJ1bC5qcGc_/cz02MTJ4NjEyJnc9/MCZrPTIwJmM9X2lC/Z2xYVkU5WkpmeFky/VmNLMmJod2l0OGhO/MFVSem9BOF8zQlVH/X1FVMD0" alt="Turkey"></a>
+                        <h3>Turkey</h3>
+                        <p>A crossroads of history and culture, where East meets West</p>
+                    </div>
+                    <div class="card">
+                        <a href="thailand.html"><img src="https://imgs.search.brave.com/DE3gEMFBhT_rEKIZ98vSwY-QhfPRz4kfAjnopQqfdeg/rs:fit:500:0:0:0/g:ce/aHR0cHM6Ly9tZWRp/YTEudGhyaWxsb3Bo/aWxpYS5jb20vZmls/ZXN0b3JlL2Vpb3hy/YjRvNTdhYnIxY2Qw/ZGNrNW4waDAxcnlf/c2h1dHRlcnN0b2Nr/XzIzODQ3MzIxNC5q/cGc" alt="Thailand"></a>
+                        <h3>Thailand</h3>
+                        <p>The land of smiles and golden temples</p>
+                    </div>
+                    <div class="card">
+                        <a href="vietnam.html"><img src="https://imgs.search.brave.com/Lm-r2DeB7yEeHQqrg4kZyoYDXJP_6GwN3guEoiAR49Q/rs:fit:500:0:0:0/g:ce/aHR0cHM6Ly9pbWcu/dHJhdmVsdHJpYW5n/bGUuY29tL2Jsb2cv/d3AtY29udGVudC91/cGxvYWRzLzIwMjMv/MDMvRGVwb3NpdHBo/b3Rvc18zODczNDAz/NzJfWEwuanBn" alt="Vietnam"></a>
+                        <h3>Vietnam</h3>
+                        <p>A tapestry of ancient traditions and vibrant energy</p>
+                    </div>
+        </div>
+        <div class="contact">
+            <h2>Contact Us</h2>
+            <form>
+                <input type="text" placeholder="Your Name">
+                <input type="email" placeholder="Your Email">
+                <textarea placeholder="Your Message"></textarea>
+                <button class="button1" value="submit">Send Message</button>
+            </form>
+            </div>
+        <footer>
+            <div class="footer-container">
+                <div class="column">
+                    <h3>Our Company</h3>
+                    <ul>
+                        <li>More About Us</li>
+                        <li>Leadership Team</li>
+                        <li>Our Products</li>
+                        <li>Awards Won</li>
+                        <li>Customer Testimonials</li>
+                        <li>Press Releases</li>
+                        <li>Support & FAQs</li>
+                        <li>Terms & Conditions</li>
+                        <li>Privacy Policy</li>
+                        <li>User Agreement</li>
+                        <li>Retail Stores</li>
+                        <li>Sitemap</li>
+                        <li>Gift Cards</li>
+                        <li>Visa Information</li>
+                    </ul>
+                </div>
+                <div class="column">
+                    <h3>Top Travel Destinations</h3>
+                    <ul>
+                        <li>Switzerland Tourism</li>
+                        <li>Bali Tourism</li>
+                        <li>Dubai Tourism</li>
+                        <li>Maldives Tourism</li>
+                        <li>Bhutan Tourism</li>
+                        <li>Vietnam Tourism</li>
+                        <li>Srilanka Tourism</li>
+                        <li>Thailand Tourism</li>
+                        <li>Singapore Tourism</li>
+                        <li>Malaysia Tourism</li>
+                        <li>Andaman Tourism</li>
+                        <li>Lakshadweep Tourism</li>
+                    </ul>
+                </div>
+                <div class="column">
+                    <h3>India Tour Packages</h3>
+                    <ul>
+                        <li>Goa Tour Packages</li>
+                        <li>Manali Tour Packages</li>
+                        <li>Andaman Packages</li>
+                        <li>Ladakh Tour Packages</li>
+                        <li>Kerala Tour Packages</li>
+                        <li>Kashmir Tour Packages</li>
+                        <li>Rajasthan Tour Packages</li>
+                        <li>Ooty Tour Packages</li>
+                        <li>Uttarakhand Tour Packages</li>
+                        <li>Himachal Tour Packages</li>
+                    </ul>
+                </div>
+                <div class="column">
+                    <h3>International Tour Packages</h3>
+                    <ul>
+                        <li>Maldives Tour Packages</li>
+                        <li>Bali Tour Packages</li>
+                        <li>Singapore Tour Packages</li>
+                        <li>Europe Tour Packages</li>
+                        <li>Greece Tour Packages</li>
+                        <li>Switzerland Tour Packages</li>
+                        <li>Dubai Tour Packages</li>
+                        <li>Malaysia Tour Packages</li>
+                        <li>Thailand Tour Packages</li>
+                    </ul>
+                </div>
+                <div class="column">
+                    <h3>Important Links</h3>
+                    <ul>
+                        <li>Holidays</li>
+                        <li>India Tour Packages</li>
+                        <li>World Tour Packages</li>
+                        <li>Honeymoon Packages</li>
+                        <li>International Flights</li>
+                        <li>Flight Status</li>
+                        <li>Hotels</li>
+                        <li>Bus Booking</li>
+                    </ul>
+                </div>
+                <div class="column">
+                    <h3>Our Products</h3>
+                    <ul>
+                        <li>Flights</li>
+                        <li>International Flights</li>
+                        <li>Domestic Flights</li>
+                        <li>Domestic Airlines</li>
+                        <li>Cheap Flights</li>
+                        <li>Flight Schedule</li>
+                        <li>Flight Status</li>
+                        <li>Web Check In</li>
+                        <li>Hotels</li>
+                        <li>Hotels In India</li>
+                        <li>Bus Booking</li>
+                        <li>Cab Booking</li>
+                    </ul>
+                </div>
+            </div>
+        </footer>
+         <footer >
+            <div class="social media">
+            <a href="https://www.instagram.com" target="_blank" title="Follow us on Instagram">
+                <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-instagram">
+                    <rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect>
+                    <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path>
+                    <line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line>
+                </svg>
+            </a>           
+            <a href="https://twitter.com" target="_blank" title="Follow us on X">
+                <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-x">
+                    <line x1="18" y1="6" x2="6" y2="18"></line>
+                    <line x1="6" y1="6" x2="18" y2="18"></line>
+                </svg>
+            </a>           
+            <a href="https://www.facebook.com" target="_blank" title="Like us on Facebook">
+                <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-facebook">
+                    <path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v9h4v-9h3l1-4h-4V7a1 1 0 0 1 1-1h3z"></path>
+                </svg>
+            </a>            
+            <a href="https://www.youtube.com" target="_blank" title="Subscribe to our YouTube channel">
+                <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-youtube">
+                    <path d="M22.54 6.42a2.78 2.78 0 0 0-1.95-1.96C18.88 4 12 4 12 4s-6.88 0-8.59.46A2.78 2.78 0 0 0 1.46 6.42 29.16 29.16 0 0 0 1 12a29.16 29.16 0 0 0 .46 5.58 2.78 2.78 0 0 0 1.95 1.96C5.12 20 12 20 12 20s6.88 0 8.59-.46a2.78 2.78 0 0 0 1.95-1.96A29.16 29.16 0 0 0 23 12a29.16 29.16 0 0 0-.46-5.58z"></path>
+                    <polygon points="9.75 15.02 15.5 12 9.75 8.98 9.75 15.02"></polygon>
+                </svg>
+            </a>
+            </div>            
+            <p1>&copy; 2024 ExploreWorld. All rights reserved.</p1>            
+            </footer>         
+    </body>
+</html>
